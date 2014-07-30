@@ -1,0 +1,135 @@
+<html>
+<head>
+	<!--
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="js/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+	_scrollTop = $(window).scrollTop();
+	_isScrollDown=true;
+	$(window).scroll(function(){
+		middleScreenPosition = getMiddlePositionOfScreen();
+		playDoors(middleScreenPosition);
+
+	});  
+	function playDoors(middleScreenPosition){
+
+		doorPosition = $('#doors').offset().top;
+
+		if(middleScreenPosition >= doorPosition){
+			openWinds();
+		}else{
+			closeWinds();
+		}
+	}
+	function openWinds(){
+		$('#doorLeftWind').css({"transform":"translateX(-151px)", "transition": "1s ease-in-out"});
+		$('#doorRightWind').css({"transform":"translateX(151px)", "transition": "1s ease-in-out"});
+	}
+	function closeWinds(){
+		$('#doorLeftWind').css({"transform":"translateX(0)", "transition": "1s ease-in-out"});
+		$('#doorRightWind').css({"transform":"translateX(0)", "transition": "1s ease-in-out"});
+	}
+
+	function getMiddlePositionOfScreen(){
+
+		_scrollTop = $(window).scrollTop();
+		_scrollMiddle = _scrollTop + screen.height/3;
+		return _scrollMiddle;
+	}
+
+
+});
+
+
+function isdoorsFrame(scrollTop){
+	frameTop = $('#doors').offset().top;
+	frameBot = $('#doors').outerHeight() + frameTop;
+
+	console.log('----------------------------'); 
+	console.log('doors - ScrollTop: ' + scrollTop); 
+	console.log('Top: ' + frameTop); 
+	console.log('Bot: ' + frameBot); 
+	if(frameTop <= scrollTop && frameBot >= scrollTop ){
+		console.log('is doorsFrame');
+		return true;
+	}
+	return false;
+}
+
+
+</script>
+
+</head>
+
+<body>
+	<body>
+		<!--mall-->
+		<div id="outsideMallFrame">
+			<div id="sky">
+				<div id="smartMozoLogo">
+					
+				</div>
+				<div id="titleClound">
+					<div class="clound-title-text">SHOPPING IS <br /> A PROBLEM...?</div>
+				</div>
+				<div id="flyClound">
+
+				</div>
+			</div>
+			<div id="mallGround">
+
+				<div id="outsideMall">
+					<img src="img/webmozo_outside_mall.png" />
+				</div>
+				<div id="outsideGround">
+					<div class="problem-msg">
+						MALLS ARE GETTING BIGGER...
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+
+
+		<div id="goIntoMallFrame">
+			<div id="stairs">
+				
+
+			</div>
+			<div id="car"></div>
+			<div id="leftTrees"></div>
+			<div id="RightTrees"></div>
+
+			<div id="doors">
+				<div id="doorLeft">
+					<div id="doorLeftWind">
+					</div>
+				</div>
+				<div id="doorRight">
+					<div id="doorRightWind">
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div style="height:3000px;"></div>
+	</body>
+	</html>
+</body>
+
+</html>
