@@ -1,0 +1,250 @@
+<html class="skrollr skrollr-desktop">
+<head>
+	<!--
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="js/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="js/skrollr.min.js"></script>-->
+<script src="js/skrollr.min.js"></script>
+
+<script>
+
+//////////////////////////////////////Clound Fly///////////////////////////////////////////
+// 	function flyCloudGo(middleScreenPosition){
+// 		cloudGo();	
+// 		cloudGoBack();
+
+// 		flyPosition = $('#flyClound').offset().top;
+
+// 		if(middleScreenPosition >= flyPosition){
+// 			carGoForward();
+// 		}else{
+// 			carGoBack();
+// 		}
+// 	}
+
+// 	function cloudGo(){
+// 		$('#flyClound').css({"transform":"translateX(20px)", "transition": "1s ease-in-out"});
+// 	}
+
+// 	function cloudGoBack(){
+// 		$('#flyClound').css({"transform":"translateX(-20px)", "transition": "1s ease-in-out"});
+// 	}
+// 	//////////////////////////////////Tree Go///////////////////////////////////////////////////////
+// 	function treeThrowUp(middleScreenPosition){
+// 		treePosition = $('#leftTrees').offset().top;
+
+// 		if(middleScreenPosition >= treePosition){
+// 			treeGo();
+// 		}else{
+// 			treeGoBack();
+// 		}
+// 	}
+
+// 	function treeGo(){
+// 		$('#leftTrees').css({"transform":"translateX(151px)", "transition": "1s ease-in-out"});
+// 		$('#rightTrees').css({"transform":"translateX(-151px)", "transition": "1s ease-in-out"});
+// 	}
+
+// 	function treeGoBack(){
+// 		$('#leftTrees').css({"transform":"translateX(0px)", "transition": "1s ease-in-out"});
+// 		$('#rightTrees').css({"transform":"translateX(0px)", "transition": "1s ease-in-out"});
+// 	}
+// 	/////////////////////////////////////Car Go////////////////////////////////////////////////
+
+// 	function carGo(middleScreenPosition){
+// 		carPosition = $('#car').offset().top;
+
+// 		if(middleScreenPosition >= carPosition){
+// 			carGoForward();
+// 		}else{
+// 			carGoBack();
+// 		}
+// 	}
+
+// 	function carGoForward(){
+// 		$('#car').css({"transform":"translateY(230px) scale(4)", 
+// 			"transition": "1s ease-in-out"});
+// 		openWinds();
+
+// 	}
+
+// 	function carGoBack(){
+// 		$('#car').css({"transform":"translateY(0px) scale(1)", 
+// 			"transition": "1s ease-in-out"});
+
+// 		closeWinds();
+// 	}
+
+// 	// function doorsGo(middleScreenPosition){
+
+// 	// 	doorPosition = $('#doors').offset().top;
+
+// 	// 	if(middleScreenPosition >= doorPosition){
+// 	// 		openWinds();
+// 	// 	}else{
+// 	// 		closeWinds();
+// 	// 	}
+// 	// }
+// 	function openWinds(){
+// 		$('#doorLeftWind').css({"transform":"translateX(-151px)", "transition": "1s ease-in-out"});
+// 		$('#doorRightWind').css({"transform":"translateX(151px)", "transition": "1s ease-in-out"});
+// 	}
+// 	function closeWinds(){
+// 		$('#doorLeftWind').css({"transform":"translateX(0)", "transition": "1s ease-in-out"});
+// 		$('#doorRightWind').css({"transform":"translateX(0)", "transition": "1s ease-in-out"});
+// 	}
+// ////////////////////////////////////////functions ///////////////////////////////////////////
+
+
+
+// 	function getMiddlePositionOfScreen(){
+
+// 		_scrollTop = $(window).scrollTop();
+// 		_scrollMiddle = _scrollTop + screen.height/5*4;
+// 		return _scrollMiddle;
+// 	}
+
+// 	function disableScroll() {
+// 		if (window.addEventListener) {
+// 			window.addEventListener('DOMMouseScroll', wheel, false);
+// 		}
+// 		window.onmousewheel = document.onmousewheel = wheel;
+// 		document.onkeydown = keydown;
+// 	}
+
+// 	function enableScroll() {
+// 		if (window.removeEventListener) {
+// 			window.removeEventListener('DOMMouseScroll', wheel, false);
+// 		}
+// 		window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
+// 	}
+
+// 	$(document).ready(function(){
+// 		_scrollTop = $(window).scrollTop();
+// 		_isScrollDown=true;
+// 		$(window).scroll(function(){
+// 			console.log(_scrollTop);
+// 			middleScreenPosition = getMiddlePositionOfScreen();
+// 			flyCloudGo(middleScreenPosition);
+// 			treeThrowUp(middleScreenPosition)
+// 			carGo(middleScreenPosition);
+// 			//doorsGo(middleScreenPosition);
+
+// 		});  
+
+// 	});
+
+</script>
+
+</head>
+
+<body>
+	<body>
+		<!--mall-->
+		<div id="outsideMallFrame">
+			<div id="sky">
+				<div id="smartMozoLogo" data-0="transform:translateY(0px);" 
+
+				data-50="transform:translateY(112px);" >
+
+			</div>
+			<div id="titleClound" data-50="transform:scale(0)" 
+
+			data-100="transform:scale(1);"
+			>
+			<div class="clound-title-text">SHOPPING IS <br /> A PROBLEM...?</div>
+		</div>
+		<div id="flyClound" data-100="transform: scale(0)"
+		data-110="transform:scale(1)">
+
+	</div>
+</div>
+<div id="mallGround"  >
+
+	<div id="outsideMall" >
+		<img id="imgMall" src="img/webmozo_outside_mall.png" data-110="bottom:110px;" 
+
+			data-200="bottom:0;" />
+	</div>
+	<div id="outsideGround">
+		<div class="problem-msg" data-200="transform:scale(0)"
+		data-220="transform:scale(1) ">
+		MALLS ARE GETTING BIGGER...
+	</div>
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+<div id="goIntoMallFrame">
+	<div id="stairs">
+
+
+	</div>
+	<div id="car"></div>
+	<div id="leftTrees"></div>
+	<div id="rightTrees"></div>
+
+	<div id="doors">
+		<div id="doorLeft">
+			<div id="doorLeftWind" data-0="transform:translateX(0px);" 
+
+			data-100="transform:translateX(150px);" 
+			>
+		</div>
+	</div>
+	<div id="doorRight">
+		<div id="doorRightWind">
+		</div>
+	</div>
+</div>
+
+</div>
+<script>
+
+</script>
+<div style="height:3000px;"></div>
+
+<script type="text/javascript">
+eMall = $("#imgMall")[0];
+
+var s = skrollr.init(
+{
+	forceHeight:false,
+	smoothScrolling:true,
+	keyframe: function(element, keyframe, direction) {
+		// if(element === eMall) {
+
+		// 	if(keyframe === 'data110' && direction === 'down'){
+		// 		$("#imgMall").addClass('bounceOutLeft');
+		// 	}
+		// 	if(keyframe === 'data110' && direction === 'up'){
+
+		// 		$("#imgMall").removeClass('bounceOutLeft');
+		// 	}
+		// }
+	}
+}
+);
+</script>
+</body>
+</html>
+
+
+
+<div id="mallGround"   data-_mallGround="height:0%;" data-_outsideMallGround="width:100%;"></div>
