@@ -11,33 +11,79 @@
 	font-family: 'MyArial', Arial, Helvetica, sans-serif;
 }
 body{
-	background:#81D2EC;
 	min-height:100%;
+	background:#81D2EC;
 
 }
 
+div{
+	max-width:1280px;
+}
+#body{
 
-#screen1{
+	background:#81D2EC;
 	width:100%;
 	height:100%;
+	max-width:1280px;
+	margin: 0 auto;
 }
 
+#screen1, #screen2, #screen3, #screen4, #screen5, 
+#screen6, #screen7, #screen8, #screen9, #screen10,
+#screen11, #screen12, #screen13, #screen14, #screen15{
+	width:100%;
+	height:100%;
+
+}
+#screen2{
+	background: #fff;
+}
+
+#screen3{
+	background: #A5B390;
+}
+
+#screen4{
+	background: #A5B390;
+}
+#screen5{
+	background:#fff;
+}
 #smartMozoLogo{
 	width: 100%;
 }
 #smartMozoImg{
 
 	background:url(../img/webmozo_logo.png) no-repeat;
+
+
 	width: 123px;
 	height: 72px;
+
 	margin: 0 auto;
+}
+
+
+#scrollUp{
+
+	background:url(../img/arrow_up.png) no-repeat;
+
+
+	width: 100px;
+	height: 51px;
+	background-position: center top;
+	margin: 30px auto;
+	color: #fff;
+	padding: 60px 0 ;
+	position: static;
+	text-align: center;
 }
 
 
 
 #flyCloud{
 	width: 100%;
-	margin-left: 75px;
+	margin-left: 0px;
 }
 
 #flyCloudImg{
@@ -45,7 +91,7 @@ body{
 	width: 331px;
 	height: 42px;
 
-	margin: 225px auto 0 auto;
+	margin: 185px auto 0 auto;
 }
 
 
@@ -69,12 +115,15 @@ body{
 
 	width: 100%;
 
-	bottom: 65px;
+	bottom: 55px;
 }
 
 #imgMall{
+
+	width: 60%;
 	display: block;
 	margin: 0 auto;
+
 }
 
 #mallProblemMsg{
@@ -86,7 +135,7 @@ body{
 	font-size: 25pt;
 	font-weight: 900;
 	text-indent: 20px;
-	bottom: 25px;
+	bottom: 20px;
 }
 
 
@@ -95,11 +144,11 @@ body{
 }
 #titleCloud{
 
-	margin: 95px auto 0 auto;
+	margin: 20px auto 0 auto;
 	background:url(../img/webmozo_ttile_cloud.png);
 	width: 305px;
 	height: 136px;
-	padding: 45px 40px 10px 20px;
+	padding: 45px 45px 10px 20px;
 }
 
 #titleCloudMsg{
@@ -114,3 +163,663 @@ body{
 }
 
 
+
+#stairsImg{
+	width: 100%;
+	height:283px;
+	margin: 0 auto;
+	background:url(../img/webmozo_road1.png);
+	background-position: top center;
+	background-repeat:repeat-y;
+}
+
+
+#car{
+
+	height:140px;
+	width:100%;
+	margin: 0px auto 0 auto;
+	background:url(../img/webmozo-car.png) no-repeat;
+	background-position: top center;
+}
+
+#leftTrees{	
+	height:185px;
+	width:198px;
+	background:url(../img/webmozo_tree_left.png) no-repeat;	
+	left:20%;
+}
+#rightTrees{	
+	height:165px;
+	width:193px;
+	background:url(../img/webmozo_tree_right.png) no-repeat;	
+	right:20%;
+}
+
+#car2{
+
+	height:50px;
+	width:100%;
+	margin: 0px auto 0 auto;
+	background:url(../img/webmozo-car2.png) no-repeat;
+	background-size: 80px;
+	background-position: top center;
+}
+
+
+
+
+
+#doors{
+	background: url(../img/webmozo_road.png);
+	height:311px;
+	position: relative;
+	top:40%;
+}
+#doorLeft, #doorRight{
+	position: relative;
+	width: 50%;
+	height:100px;
+	float: left;
+}
+#doorLeftWind, #doorRightWind{
+	position: absolute!important;
+	background:  #eef;
+	height:311px;
+	width: 100%;
+}
+#doorLeftWind{
+	right:0;
+	background: url(../img/webmozo_door_left.png) no-repeat;
+	background-position: top right;
+
+}
+#doorRightWind{
+	left:0;
+	background: url(../img/webmozo_door_right.png) no-repeat;
+	background-position: top left;
+}
+
+
+#mallInside{
+	height: 100%;
+	width: 100%;
+	background: url(../img/webmozo_mallinside.png) no-repeat;
+	background-size: auto 100%;
+	background-position: top center;
+}
+
+#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
+
+	height: 360px;
+	width:  360px;
+	position: absolute;
+	background-size: auto 100% !important;
+}
+
+
+#char1,#char3, #char5,  #char7,  #char9, #char11{
+
+	left:20%;
+}
+
+
+ #char2, #char4, #char6, #char8, #char10{
+
+	right:20%;
+}
+
+
+#char1{
+	background: url(../img/wmozo_scenario_1.png) no-repeat;
+}
+
+#char2{
+	background: url(../img/wmozo_scenario_2.png) no-repeat;
+}
+
+#char3{
+	background: url(../img/wmozo_scenario_3.png) no-repeat;
+}
+
+#char4{
+	background: url(../img/wmozo_scenario_4.png) no-repeat;
+}
+
+#char5{
+	background: url(../img/wmozo_scenario_5.png) no-repeat;
+}
+
+#char6{
+	background: url(../img/wmozo_scenario_6.png) no-repeat;
+}
+
+#char7{
+	background: url(../img/wmozo_scenario_7.png) no-repeat;
+}
+
+#char8{
+	background: url(../img/wmozo_scenario_8.png) no-repeat;
+}
+
+#char9{
+	background: url(../img/wmozo_scenario_9.png) no-repeat;
+}
+
+#char10{
+	background: url(../img/wmozo_scenario_10.png) no-repeat;
+}
+
+#char11{
+	background: url(../img/wmozo_scenario_11.png) no-repeat;
+}
+
+#ideal{
+	height: 640px;
+	width:  608px;
+	background: url(../img/wmozo_scenario_12.png) no-repeat;
+	background-size:  100% auto;
+	margin:30px auto;
+	position: static;
+}
+
+#idealFrame{
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+}
+
+#SmartMozoFrame{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#SmartMozo{
+	background: url(../img/wmozo_scenario_14_buddy_1.png) no-repeat;
+	background-position: top center;
+	background-size: contain;
+	width: 100%;
+	height: 330px;
+	position: absolute;
+	bottom:0;
+}
+
+#MozoMsg{	
+	position: relative;
+	right: -80px;
+	top:-280px;
+	background: url(../img/wmozo_scenario_13_bubbytalk.png) no-repeat;
+
+	background-size: contain;
+	width: 321px;
+	height: 100%;
+	margin: 0 auto 10px auto;
+}
+
+#MozoMsg .mozo-msg{
+	height: 278px;
+	width: 278px;
+}
+
+
+
+
+#AvailableSmartMozoFrame{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#AvailableSmartMozo{
+	background: url(../img/wmz_content_mozo_123456.png) no-repeat;
+	background-position: top center;
+	background-size: contain;
+	width: 100%;
+	height: 198px;
+	position: absolute;
+	bottom:10px;
+	left:150px;
+}
+
+#AvailableMozoMsg{	
+	position: relative;
+	right: 0px;
+	top:-1520px;
+	background: url(../img/wmz_content_1_talk.png) no-repeat;
+
+	background-size: contain;
+	width: 160px;
+	height: 100%;
+	margin: 0 auto 10px auto;
+}
+
+
+#AvailableIphone{	
+	background: url(../img/wmz_content_1b.png) no-repeat;
+
+	position: relative;
+	left: -130px;
+	top:-1050px;
+	background-position: center top;
+	background-size: contain;
+	height: 700px;
+	width: 100%;
+}
+
+
+#AvailableAndroid{	
+	background: url(../img/wmz_content_1a.png) no-repeat;
+
+	position: relative;
+	right: 120px;
+	top:-360px;
+	background-position: center top;
+	background-size: contain;
+	height: 630px;
+	width: 100%;
+}
+
+#AvailableMozoMsg .mozo-msg{
+	height: 160px;
+	width: 160px;
+	padding: 15px 30px;
+	font-size:10pt;
+	line-height: 15pt;
+}
+
+
+
+
+
+
+#DirectionSmartMozoFrame{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#DirectionSmartMozo{
+	background: url(../img/wmz_content_mozo_123456.png) no-repeat;
+	background-position: center top;
+	background-size: contain;
+	width: 100%;
+	height: 198px;
+	position: absolute;
+	bottom:10px;
+	left:60px;
+}
+
+#DirectionMozoMsg{	
+	position: relative;
+	right: -60px;
+	top:-1010px;
+	background: url(../img/wmz_content_talk_2345.png) no-repeat;
+
+	background-size: contain;
+	width: 175px;
+	height: 396px;
+	margin: 0 auto 10px auto;
+}
+
+
+#DirectionIphone{	
+	background: url(../img/wmz_content_2.png) no-repeat;
+
+	position: relative;
+	left: -130px;
+	top:-400px;
+	background-position: center -50px;
+	background-size: contain;
+	height: 700px;
+	width: 100%;
+}
+
+#DirectionMozoMsg .mozo-msg{
+	height: 283px;
+	width: 175px;
+	font-size:10pt;
+	line-height: 12pt;
+	padding: 42px 26px 40px 26px;
+}
+
+
+
+
+#PromotionSmartMozoFrame{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+
+#PromotionSmartMozo{
+	background: url(../img/wmz_content_mozo_123456.png) no-repeat;
+	background-position: center top;
+	background-size: contain;
+	width: 100%;
+	height: 198px;
+	position: absolute;
+	bottom:10px;
+	left:60px;
+}
+
+#PromotionMozoMsg{	
+	position: relative;
+	right: -60px;
+	top:-1010px;
+	background: url(../img/wmz_content_talk_2345.png) no-repeat;
+
+	background-size: contain;
+	width: 175px;
+	height: 396px;
+	margin: 0 auto 10px auto;
+}
+
+
+#PromotionIphone{	
+	background: url(../img/wmz_content_3.png) no-repeat;
+
+	position: relative;
+	left: -130px;
+	top:-400px;
+	background-position: center -50px;
+	background-size: contain;
+	height: 700px;
+	width: 100%;
+}
+
+#PromotionMozoMsg .mozo-msg{
+	height: 283px;
+	width: 175px;
+	font-size:11pt;
+	line-height: 12pt;
+	padding: 42px 26px 40px 26px;
+}
+
+
+
+
+#HotPotSmartMozoFrame{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#HotPotSmartMozo{
+	background: url(../img/wmz_content_mozo_123456.png) no-repeat;
+	background-position: top center;
+	background-size: contain;
+	width: 100%;
+	height: 198px;
+	position: absolute;
+	bottom:10px;
+	left:60px;
+}
+
+#HotPotMozoMsg{	
+	position: relative;
+	right: -60px;
+	top:-1010px;
+	background: url(../img/wmz_content_talk_2345.png) no-repeat;
+
+	background-size: contain;
+	width: 175px;
+	height: 396px;
+	margin: 0 auto 10px auto;
+}
+
+
+#HotPotIphone{	
+	background: url(../img/wmz_content_4.png) no-repeat;
+
+	position: relative;
+	left: -130px;
+	top:-400px;
+	background-position: center -50px;
+	background-size: contain;
+	height: 700px;
+	width: 100%;
+}
+
+#HotPotMozoMsg .mozo-msg{
+	height: 283px;
+	width: 175px;
+	font-size:10pt;
+	line-height: 12pt;
+	padding: 42px 26px 40px 26px;
+}
+
+
+
+
+
+#CouponSmartMozoFrame{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#CouponSmartMozo{
+	background: url(../img/wmz_content_mozo_123456.png) no-repeat;
+	background-position: top center;
+	background-size: contain;
+	width: 100%;
+	height: 198px;
+	position: absolute;
+	bottom:10px;
+	left:60px;
+}
+
+#CouponMozoMsg{	
+	position: relative;
+	right: -60px;
+	top:-1010px;
+	background: url(../img/wmz_content_talk_2345.png) no-repeat;
+
+	background-size: contain;
+	width: 175px;
+	height: 396px;
+	margin: 0 auto 10px auto;
+}
+
+
+#CouponIphone{	
+
+	background: url(../img/wmz_content_5.png) no-repeat;
+
+	position: relative;
+
+	left: -130px;
+	top:-400px;
+	background-position: center -50px;
+	background-size: contain;
+	height: 700px;
+	width: 100%;
+}
+
+#CouponMozoMsg .mozo-msg{
+	height: 283px;
+	width: 175px;
+	font-size:10pt;
+	line-height: 12pt;
+	padding: 42px 17px 40px 17px;
+}
+
+
+
+
+#MemberSmartMozoFrame{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#MemberSmartMozo{
+	background: url(../img/wmz_content_mozo_123456.png) no-repeat;
+	background-position: top center;
+	background-size: contain;
+	width: 100%;
+	height: 198px;
+	position: absolute;
+	bottom:10px;
+	left:100px;
+}
+
+#MemberMozoMsg{	
+	position: relative;
+	right: -35px;
+	top:-885px;
+	background: url(../img/wmz_content_talk_2345.png) no-repeat;
+
+	background-size: contain;
+	width: 175px;
+	height: 396px;
+	margin: 0 auto 10px auto;
+}
+
+
+#MemberIphone{	
+
+	background: url(../img/wmz_content_6.png) no-repeat;
+
+	position: relative;
+
+	left: -100px;
+	top:-360px;
+	background-position: center 0px;
+	background-size: contain;
+	height: 570px;
+	width: 100%;
+}
+
+#MemberMozoMsg .mozo-msg{
+	height: 283px;
+	width: 175px;
+	font-size:10pt;
+	line-height: 12pt;
+	padding: 42px 17px 40px 17px;
+}
+
+
+
+
+
+#ChatSmartMozoFrame{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#ChatSmartMozo{
+	background: url(../img/wmz_content_7_mozo.png) no-repeat;
+	background-position: top center;
+	background-size: contain;
+	width: 100%;
+	height: 198px;
+	position: absolute;
+	bottom:10px;
+	left:-150px;
+}
+
+#ChatMozoMsg{	
+	position: relative;
+	right: 0px;
+	top:-1510px;
+	background: url(../img/wmozo_scenario_13_bubbytalk.png) no-repeat;
+
+	background-size: contain;
+	width: 180px;
+	height: 220px;
+	margin: 0 auto 10px auto;
+}
+
+
+#ChatIphone{	
+	background: url(../img/wmz_content_7a.png) no-repeat;
+
+	position: relative;
+	left: 110px;
+	top:-1090px;
+	background-position: center top;
+	background-size: contain;
+	height: 570px;
+	width: 100%;
+}
+
+
+#ChatAndroid{	
+	background: url(../img/wmz_content_7b.png) no-repeat;
+
+	position: relative;
+	right: -128px;
+	top:-540px;
+	background-position: center top;
+	background-size: contain;
+	height: 730px;
+	width: 100%;
+}
+
+#ChatMozoMsg .mozo-msg{
+	height: 180px;
+	width: 180px;
+	padding: 42px 30px;
+	font-size:10pt;
+	line-height: 12pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mozo-msg{
+	width: 100%;
+	color:#fff;
+	text-transform:uppercase ;
+	text-align: center;
+	line-height: 38px;
+	font-size: 20pt;
+	font-weight: 900;
+	text-indent: 20px;
+	bottom: 10px;
+	padding:50px 50px;
+	font-weight: 900;
+}
+
+
+.mozo-header{
+
+	width: 100%;
+	color:#ff5a12;
+	text-transform:uppercase ;
+	text-align: center;
+	line-height: 38px;
+	font-size: 25pt;
+	font-weight: 900;
+	text-indent: 20px;
+	font-weight: 900;
+	padding:20px 0px;
+}

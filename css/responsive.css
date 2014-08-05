@@ -1,0 +1,76 @@
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 999px) {
+	#smartMozoImg, #flyCloudImg, #titleCloud{
+		background-size: 80% 80%;
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
+
+	#titleCloud{
+
+		padding: 30px 40px 10px 20px;
+	}
+
+	#flyCloudImg{
+		margin: 60px auto 0 auto;
+	}
+	#imgMall{
+		width: 160%;
+		height: auto;
+		margin-left:-30%;
+	}
+
+	#titleCloudMsg{
+		font-size: 13pt;
+	}
+	#mallProblemMsg{
+
+		font-size: 12pt;
+	}
+
+	#stairsImg{
+		background-size: 50%;
+	}
+
+
+	#leftTrees{	
+		position: absolute;
+		background-size: 40%;
+
+		background-position: top left;
+		left:5%;
+	}
+	#rightTrees{	
+		position: absolute;
+		background-size: 40%;
+
+		background-position: top right;
+		right:5%;
+	}
+
+	#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
+
+		height: 200px!important;
+		width:  200px!important;
+	}
+
+	#char1,#char3, #char5,  #char7,  #char9, #char11{
+
+		margin-left:-10%;
+	}
+
+
+	 #char2, #char4, #char6, #char8, #char10{
+
+		margin-right:-10%;
+	}
+
+	#ideal{
+		height: 310px;
+		width:  300px;
+		margin: 60px auto;
+	}
+
+/* Styles */
+}
