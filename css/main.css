@@ -17,14 +17,14 @@ body{
 }
 
 div{
-	max-width:1280px;
+	/*max-width:1280px;*/
 }
 #body{
 
 	background:#81D2EC;
 	width:100%;
 	height:100%;
-	max-width:1280px;
+	/*max-width:1280px;*/
 	margin: 0 auto;
 }
 
@@ -41,6 +41,10 @@ div{
 
 #screen3{
 	background: #A5B390;
+	background:url(../img/wmz_road_per_spective.png) no-repeat;
+	background-position: center top;
+	background-size: auto 90%;
+
 }
 
 #screen4{
@@ -48,6 +52,11 @@ div{
 }
 #screen5{
 	background:#fff;
+}
+
+#screen13{
+	height: 180px;
+
 }
 #smartMozoLogo{
 	width: 100%;
@@ -63,20 +72,20 @@ div{
 	margin: 0 auto;
 }
 
+#scrollFrame{
+	position: fixed;
+	bottom: 0;
+	z-index: 999999;
+	width: 100%;
+}
+#scroll{
 
-#scrollUp{
-
-	background:url(../img/arrow_up.png) no-repeat;
-
-
-	width: 100px;
-	height: 51px;
-	background-position: center top;
-	margin: 30px auto;
-	color: #fff;
-	padding: 60px 0 ;
-	position: static;
-	text-align: center;
+	background:url(../img/arrow_down.png) no-repeat;
+	background-position: center top ;
+	width: 70px;
+	height: 35px;
+	margin: 0 auto;
+	transition: opacity 1s ease-in-out;
 }
 
 
@@ -91,7 +100,7 @@ div{
 	width: 331px;
 	height: 42px;
 
-	margin: 185px auto 0 auto;
+	margin: 141px auto 0 auto;
 }
 
 
@@ -142,6 +151,7 @@ div{
 #titleCloudFrame{	
 	width: 100%;
 }
+
 #titleCloud{
 
 	margin: 20px auto 0 auto;
@@ -198,7 +208,7 @@ div{
 
 #car2{
 
-	height:50px;
+	height:65px;
 	width:100%;
 	margin: 0px auto 0 auto;
 	background:url(../img/webmozo-car2.png) no-repeat;
@@ -208,13 +218,12 @@ div{
 
 
 
-
-
 #doors{
 	background: url(../img/webmozo_road.png);
 	height:311px;
-	position: relative;
-	top:40%;
+	bottom:10%;
+	position: absolute;
+	width: 100%;
 }
 #doorLeft, #doorRight{
 	position: relative;
@@ -242,11 +251,33 @@ div{
 
 
 #mallInside{
+	position:relative;
 	height: 100%;
 	width: 100%;
+	overflow: hidden;
 	background: url(../img/webmozo_mallinside.png) no-repeat;
-	background-size: auto 100%;
+
 	background-position: top center;
+	background-size: 100% auto;
+	z-index: 100;
+}
+
+
+#bigger{
+	height: 275px;
+	width: 542px;
+	max-width: 80%;
+	position: static!important;
+	margin: 0 auto;
+	background: url(../img/webmozo_banner.png) no-repeat;
+	background-position: top center;
+	background-size: contain;
+	color:#fff;
+	font-size:25pt;
+	text-align: center;
+	line-height: 77px;
+	vertical-align: middle;
+	font-weight: 900;
 }
 
 #char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
@@ -367,34 +398,10 @@ div{
 
 
 
-
-#AvailableSmartMozoFrame{
+#AvailableSmartMozoFrame, #DirectionSmartMozoFrame,#PromotionSmartMozoFrame,#HotPotSmartMozoFrame,#CouponSmartMozoFrame,#MemberSmartMozoFrame{
 	width: 100%;
 	height: 100%;
 	position: relative;
-}
-
-#AvailableSmartMozo{
-	background: url(../img/wmz_content_mozo_123456.png) no-repeat;
-	background-position: top center;
-	background-size: contain;
-	width: 100%;
-	height: 198px;
-	position: absolute;
-	bottom:10px;
-	left:150px;
-}
-
-#AvailableMozoMsg{	
-	position: relative;
-	right: 0px;
-	top:-1520px;
-	background: url(../img/wmz_content_1_talk.png) no-repeat;
-
-	background-size: contain;
-	width: 160px;
-	height: 100%;
-	margin: 0 auto 10px auto;
 }
 
 
@@ -423,286 +430,26 @@ div{
 	width: 100%;
 }
 
-#AvailableMozoMsg .mozo-msg{
-	height: 160px;
+#AvailableMozoMsg{	
+	position: relative;
+	right: 0px;
+	top:-1515px;
+	background: url(../img/wmz_content_1_talk.png) no-repeat;
+
+	background-size: contain;
 	width: 160px;
-	padding: 15px 30px;
-	font-size:10pt;
-	line-height: 15pt;
-}
-
-
-
-
-
-
-#DirectionSmartMozoFrame{
-	width: 100%;
 	height: 100%;
-	position: relative;
-}
-
-#DirectionSmartMozo{
-	background: url(../img/wmz_content_mozo_123456.png) no-repeat;
-	background-position: center top;
-	background-size: contain;
-	width: 100%;
-	height: 198px;
-	position: absolute;
-	bottom:10px;
-	left:60px;
-}
-
-#DirectionMozoMsg{	
-	position: relative;
-	right: -60px;
-	top:-1010px;
-	background: url(../img/wmz_content_talk_2345.png) no-repeat;
-
-	background-size: contain;
-	width: 175px;
-	height: 396px;
 	margin: 0 auto 10px auto;
 }
 
-
-#DirectionIphone{	
-	background: url(../img/wmz_content_2.png) no-repeat;
-
-	position: relative;
-	left: -130px;
-	top:-400px;
-	background-position: center -50px;
-	background-size: contain;
-	height: 700px;
-	width: 100%;
-}
-
-#DirectionMozoMsg .mozo-msg{
-	height: 283px;
-	width: 175px;
+#AvailableMozoMsg .mozo-msg{
+	height: 150px;
+	width: 150px;
+	padding: 1px 30px;
 	font-size:10pt;
 	line-height: 12pt;
-	padding: 42px 26px 40px 26px;
 }
 
-
-
-
-#PromotionSmartMozoFrame{
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
-
-#PromotionSmartMozo{
-	background: url(../img/wmz_content_mozo_123456.png) no-repeat;
-	background-position: center top;
-	background-size: contain;
-	width: 100%;
-	height: 198px;
-	position: absolute;
-	bottom:10px;
-	left:60px;
-}
-
-#PromotionMozoMsg{	
-	position: relative;
-	right: -60px;
-	top:-1010px;
-	background: url(../img/wmz_content_talk_2345.png) no-repeat;
-
-	background-size: contain;
-	width: 175px;
-	height: 396px;
-	margin: 0 auto 10px auto;
-}
-
-
-#PromotionIphone{	
-	background: url(../img/wmz_content_3.png) no-repeat;
-
-	position: relative;
-	left: -130px;
-	top:-400px;
-	background-position: center -50px;
-	background-size: contain;
-	height: 700px;
-	width: 100%;
-}
-
-#PromotionMozoMsg .mozo-msg{
-	height: 283px;
-	width: 175px;
-	font-size:11pt;
-	line-height: 12pt;
-	padding: 42px 26px 40px 26px;
-}
-
-
-
-
-#HotPotSmartMozoFrame{
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
-#HotPotSmartMozo{
-	background: url(../img/wmz_content_mozo_123456.png) no-repeat;
-	background-position: top center;
-	background-size: contain;
-	width: 100%;
-	height: 198px;
-	position: absolute;
-	bottom:10px;
-	left:60px;
-}
-
-#HotPotMozoMsg{	
-	position: relative;
-	right: -60px;
-	top:-1010px;
-	background: url(../img/wmz_content_talk_2345.png) no-repeat;
-
-	background-size: contain;
-	width: 175px;
-	height: 396px;
-	margin: 0 auto 10px auto;
-}
-
-
-#HotPotIphone{	
-	background: url(../img/wmz_content_4.png) no-repeat;
-
-	position: relative;
-	left: -130px;
-	top:-400px;
-	background-position: center -50px;
-	background-size: contain;
-	height: 700px;
-	width: 100%;
-}
-
-#HotPotMozoMsg .mozo-msg{
-	height: 283px;
-	width: 175px;
-	font-size:10pt;
-	line-height: 12pt;
-	padding: 42px 26px 40px 26px;
-}
-
-
-
-
-
-#CouponSmartMozoFrame{
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
-#CouponSmartMozo{
-	background: url(../img/wmz_content_mozo_123456.png) no-repeat;
-	background-position: top center;
-	background-size: contain;
-	width: 100%;
-	height: 198px;
-	position: absolute;
-	bottom:10px;
-	left:60px;
-}
-
-#CouponMozoMsg{	
-	position: relative;
-	right: -60px;
-	top:-1010px;
-	background: url(../img/wmz_content_talk_2345.png) no-repeat;
-
-	background-size: contain;
-	width: 175px;
-	height: 396px;
-	margin: 0 auto 10px auto;
-}
-
-
-#CouponIphone{	
-
-	background: url(../img/wmz_content_5.png) no-repeat;
-
-	position: relative;
-
-	left: -130px;
-	top:-400px;
-	background-position: center -50px;
-	background-size: contain;
-	height: 700px;
-	width: 100%;
-}
-
-#CouponMozoMsg .mozo-msg{
-	height: 283px;
-	width: 175px;
-	font-size:10pt;
-	line-height: 12pt;
-	padding: 42px 17px 40px 17px;
-}
-
-
-
-
-#MemberSmartMozoFrame{
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
-#MemberSmartMozo{
-	background: url(../img/wmz_content_mozo_123456.png) no-repeat;
-	background-position: top center;
-	background-size: contain;
-	width: 100%;
-	height: 198px;
-	position: absolute;
-	bottom:10px;
-	left:100px;
-}
-
-#MemberMozoMsg{	
-	position: relative;
-	right: -35px;
-	top:-885px;
-	background: url(../img/wmz_content_talk_2345.png) no-repeat;
-
-	background-size: contain;
-	width: 175px;
-	height: 396px;
-	margin: 0 auto 10px auto;
-}
-
-
-#MemberIphone{	
-
-	background: url(../img/wmz_content_6.png) no-repeat;
-
-	position: relative;
-
-	left: -100px;
-	top:-360px;
-	background-position: center 0px;
-	background-size: contain;
-	height: 570px;
-	width: 100%;
-}
-
-#MemberMozoMsg .mozo-msg{
-	height: 283px;
-	width: 175px;
-	font-size:10pt;
-	line-height: 12pt;
-	padding: 42px 17px 40px 17px;
-}
 
 
 
@@ -719,34 +466,21 @@ div{
 	background-position: top center;
 	background-size: contain;
 	width: 100%;
-	height: 198px;
+	height: 180px;
 	position: absolute;
 	bottom:10px;
 	left:-150px;
 }
-
-#ChatMozoMsg{	
-	position: relative;
-	right: 0px;
-	top:-1510px;
-	background: url(../img/wmozo_scenario_13_bubbytalk.png) no-repeat;
-
-	background-size: contain;
-	width: 180px;
-	height: 220px;
-	margin: 0 auto 10px auto;
-}
-
 
 #ChatIphone{	
 	background: url(../img/wmz_content_7a.png) no-repeat;
 
 	position: relative;
 	left: 110px;
-	top:-1090px;
+	top:-1000px;
 	background-position: center top;
 	background-size: contain;
-	height: 570px;
+	height: 540px;
 	width: 100%;
 }
 
@@ -756,42 +490,151 @@ div{
 
 	position: relative;
 	right: -128px;
-	top:-540px;
+	top:-455px;
 	background-position: center top;
 	background-size: contain;
-	height: 730px;
+	height: 640px;
 	width: 100%;
 }
+
+
+
+
+#AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
+	background: url(../img/wmz_content_mozo_123456.png) no-repeat;
+	background-position: top center;
+	background-size: contain;
+	width: 100%;
+	height: 180px;
+	position: absolute;
+	bottom:10px;
+	left:150px;
+}
+
+
+/*
+#MemberIphone{	
+
+	background: url(../img/wmz_content_6.png) no-repeat;
+
+	position: relative;
+
+	left: -100px;
+	top:-360px;
+	background-position: center 0px;
+	background-size: contain;
+	width: 100%;
+}*/
+
+
+#MemberIphone, #CouponIphone, #HotPotIphone, #PromotionIphone, #DirectionIphone{	
+	position: relative;
+	left: -130px;
+	top:-400px;
+	height: 700px;
+	width: 100%;
+}
+
+#MemberIphone{	
+
+	background: url(../img/wmz_content_6.png) no-repeat;
+	background-position: center 0px;
+	background-size: contain;
+	left: -100px;
+	top:-360px;
+	height: 545px;
+}
+
+#CouponIphone{	
+	background: url(../img/wmz_content_5.png) no-repeat;
+	background-position: center -50px;
+	background-size: contain;
+}
+
+#HotPotIphone{	
+	background: url(../img/wmz_content_4.png) no-repeat;
+	background-position: center -50px;
+	background-size: contain;
+}
+
+#PromotionIphone{	
+	background: url(../img/wmz_content_3.png) no-repeat;
+	background-position: center -50px;
+	background-size: contain;
+}
+
+#DirectionIphone{	
+	background: url(../img/wmz_content_2.png) no-repeat;
+	background-position: center -50px;
+	background-size: contain;
+}
+
+
+
+
+
+
+#DirectionMozoMsg, #MemberMozoMsg,  #CouponMozoMsg, #HotPotMozoMsg, #PromotionMozoMsg{	
+	position: relative;
+	right: -10px;
+	top:-1030px;
+	background: url(../img/wmz_content_talk_2345.png) no-repeat;
+
+	background-size: contain;
+	width: 175px;
+	height: 396px;
+	margin: 0 auto 10px auto;
+}
+
+#MemberMozoMsg{
+
+	background: url(../img/wmz_content_6_talk.png) no-repeat;
+
+	background-size: contain;
+	top:-876px;
+}
+
+#ChatMozoMsg{	
+	position: relative;
+	right: -50px;
+	top:-1350px;
+	background: url(../img/wmozo_scenario_13_bubbytalk.png) no-repeat;
+
+	background-size: contain;
+	width: 180px;
+	height: 220px;
+	margin: 0 auto 10px auto;
+}
+
+
 
 #ChatMozoMsg .mozo-msg{
 	height: 180px;
 	width: 180px;
-	padding: 42px 30px;
+	padding: 22px 30px;
 	font-size:10pt;
 	line-height: 12pt;
 }
 
 
+#DirectionMozoMsg .mozo-msg, #MemberMozoMsg .mozo-msg, #CouponMozoMsg .mozo-msg, #HotPotMozoMsg .mozo-msg, #PromotionMozoMsg .mozo-msg{
+	height: 283px;
+	width: 175px;
+	font-size:10pt;
+	line-height: 12pt;
+	padding: 42px 20px 40px 20px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#biglapsLogo{	
+	position: relative;
+	background-size: contain;
+	background: url(../img/wmz_logo_biglab.png) no-repeat;
+	background-position: left top;
+	height: 100px;
+	width: 500px;
+	margin: 60px auto;
+}
 
 
 

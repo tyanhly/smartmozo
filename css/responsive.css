@@ -1,6 +1,11 @@
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 999px) {
+
+	#scroll{
+
+		background:url(../img/arrow_up.png) no-repeat;
+	}
 	#smartMozoImg, #flyCloudImg, #titleCloud{
 		background-size: 80% 80%;
 		background-position: center top;
@@ -9,12 +14,13 @@ and (max-device-width : 999px) {
 
 	#titleCloud{
 
-		padding: 30px 40px 10px 20px;
+		padding: 30px 30px 10px 5px;
 	}
 
 	#flyCloudImg{
-		margin: 60px auto 0 auto;
+		margin: 120px auto 0 auto;
 	}
+
 	#imgMall{
 		width: 160%;
 		height: auto;
@@ -36,17 +42,27 @@ and (max-device-width : 999px) {
 
 	#leftTrees{	
 		position: absolute;
-		background-size: 40%;
+		background-size: 30%;
 
 		background-position: top left;
 		left:5%;
 	}
 	#rightTrees{	
 		position: absolute;
-		background-size: 40%;
+		background-size: 30%;
 
 		background-position: top right;
 		right:5%;
+	}
+
+	#mallInside{
+		background-size: auto 100% ;
+	}
+
+	#bigger{
+		margin: 200px auto;
+		font-size:12pt;
+		line-height: 33px;
 	}
 
 	#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
@@ -71,6 +87,141 @@ and (max-device-width : 999px) {
 		width:  300px;
 		margin: 60px auto;
 	}
+
+
+
+
+	#SmartMozo{
+		height: 270px;
+		bottom:10px;
+	}
+
+	#MozoMsg{	
+		right: -60px;
+		top:-250px;
+		width: 280px;
+	}
+
+	#MozoMsg .mozo-msg{
+		height: 230px;
+		width: 230px;	
+		font-size: 17pt;
+		bottom: 10px;
+		padding:40px 20px;
+	}
+
+
+	.mozo-header{
+		line-height: 20pt;
+		font-size: 14pt;
+		padding:20px 0px;
+	}
+
+	#AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo, 
+	#ChatSmartMozo{
+		height: 150px;
+		left:100px;
+	}
+
+	#AvailableIphone{	
+		left: -110px;
+		top:-850px;
+	}
+
+	#AvailableAndroid{	
+		height: 500px;
+		right: 80px;
+		top:-290px;
+	}
+
+	#AvailableMozoMsg{	
+
+		right: -20px;
+		top:-1380px;
+		height: 100%;
+	}
+
+	#AvailableMozoMsg .mozo-msg{
+		height: 120px;
+		width: 120px;
+		padding: 1px 25px;
+		font-size:8pt;
+		line-height: 11pt;
+	}
+
+
+	#DirectionMozoMsg, #CouponMozoMsg, #HotPotMozoMsg, #PromotionMozoMsg, #MemberMozoMsg{	
+
+		right: -5px;
+		top:-970px;
+		width: 140px;
+		height: 280px;
+	}
+	#MemberMozoMsg{
+
+		top:-700px;
+	}
+
+	#DirectionMozoMsg .mozo-msg, #MemberMozoMsg .mozo-msg, 
+	#CouponMozoMsg .mozo-msg, #HotPotMozoMsg .mozo-msg, #PromotionMozoMsg .mozo-msg{
+		height: 260px;
+		width: 140px;
+		font-size:8pt;
+		line-height: 11pt;
+		padding: 42px 15px 40px 15px;
+	}
+
+
+
+	#CouponIphone, #HotPotIphone, #PromotionIphone, #DirectionIphone{	
+		left: -110px;
+		top:-290px;
+	}
+
+
+	#MemberIphone{	
+
+		left: -90px;
+		top:-280px;
+		background-position: center 0px;
+		background-size: contain;
+		height: 430px;
+	}
+
+
+	#ChatSmartMozo{
+		left:-140px;
+	}
+
+	#ChatAndroid{	
+		top:-400px;
+	}
+
+
+	#ChatIphone{	
+		left: 120px;
+		height: 450px;
+		top:-990px;
+	}
+
+
+	#ChatMozoMsg{	
+		right: -35px;
+		top:-1330px;
+
+		width: 140px;
+		height: 180px;
+	}
+
+
+	#ChatMozoMsg .mozo-msg{
+		height: 180px;
+		width: 140px;
+		font-size:8pt;
+		line-height: 11pt;
+		padding: 15px 22px;
+	}
+
 
 /* Styles */
 }
