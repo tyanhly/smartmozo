@@ -2,14 +2,14 @@
 constants = {};
 unit = 200;
 constants.step1      = unit;
-constants.step2      = constants.step1 + unit;
-constants.step3      = constants.step2 + unit;
+constants.step2      = constants.step1 + unit/2;
+constants.step3      = constants.step2 + unit/2;
 constants.step4      = constants.step3 + unit;
 constants.step5      = constants.step4 + unit;
-constants.step6      = constants.step5 + unit;
-constants.step7      = constants.step6 + unit;
-constants.step8      = constants.step7 + unit;
-constants.step9      = constants.step8 + unit;
+constants.step6      = constants.step5 + unit/4;
+constants.step7      = constants.step6 + unit/4;
+constants.step8      = constants.step7 + unit/2;
+constants.step9      = constants.step8 + unit/2;
 
 constants.step10      = constants.step9 + unit;
 constants.step11      = constants.step10 + unit;
@@ -27,9 +27,10 @@ constants.step19      = constants.step18 + unit;
 
 
 
-constants.step20      = constants.step19 + unit;
-constants.step201     = constants.step20 + unit;
-constants.step21      = constants.step201 + unit;
+constants.step20      = constants.step19 + 3/2*unit;
+constants.step201     = constants.step20 + 3/2*unit;
+constants.step21      = constants.step201 + 3/2* unit;
+
 constants.step22      = constants.step21 + unit;
 constants.step221      = constants.step22 + unit;
 constants.step2211      = constants.step221 + unit;
@@ -48,42 +49,64 @@ constants.step224      = constants.step223 + unit;
 constants.step23      = constants.step224 + unit;
 constants.step24      = constants.step23 + unit;
 constants.step25      = constants.step24 + unit;
-constants.step26      = constants.step25 + unit;
+
+constants.step251      = constants.step25 + 3/2*unit;
+
+constants.step26      = constants.step251 + unit;
 constants.step27      = constants.step26 + unit;
-constants.step28      = constants.step27 + unit;
+constants.step271      = constants.step27 + 3/2*unit;
+constants.step28      = constants.step271 + unit;
 constants.step29      = constants.step28 + unit;
+constants.step291      = constants.step29 + 3/2*unit;
 
 
 
-constants.step30      = constants.step29 + unit;
+constants.step30      = constants.step291 + unit;
 constants.step31      = constants.step30 + unit;
-constants.step32      = constants.step31 + unit;
+constants.step311      = constants.step31 + 3/2*unit;
+
+constants.step32      = constants.step311 + unit;
 constants.step33      = constants.step32 + unit;
-constants.step34      = constants.step33 + unit;
+constants.step331      = constants.step33 + 3/2*unit;
+
+constants.step34      = constants.step331 + unit;
 constants.step35      = constants.step34 + unit;
-constants.step36      = constants.step35 + unit;
+constants.step351      = constants.step35 + 3/2*unit;
+
+constants.step36      = constants.step351 + unit;
 constants.step37      = constants.step36 + unit;
-constants.step38      = constants.step37 + unit;
+constants.step371      = constants.step37 + 3/2*unit;
+
+constants.step38      = constants.step371 + unit;
 constants.step39      = constants.step38 + unit;
+constants.step391      = constants.step39 + 3/2*unit;
 
 
 
-constants.step40      = constants.step39 + unit;
+constants.step40      = constants.step391 + unit;
 constants.step41      = constants.step40 + unit;
-constants.step42      = constants.step41 + unit;
+constants.step411      = constants.step41 + 3/2*unit;
+
+constants.step42      = constants.step411 + unit;
 constants.step43      = constants.step42 + unit;
-constants.step44      = constants.step43 + unit;
+constants.step431      = constants.step43 + 3/2*unit;
+
+constants.step44      = constants.step431 + unit;
 constants.step45      = constants.step44 + unit;
-constants.step46      = constants.step45 + unit;
+constants.step451      = constants.step45 + unit;
+constants.step452      = constants.step451 + unit;
+
+constants.step46      = constants.step452 + unit;
 constants.step47      = constants.step46 + unit;
+
 constants.step48      = constants.step47 + unit;
 constants.step49      = constants.step48 + unit;
 constants.step491      = constants.step49 + unit;
-constants.step492     = constants.step491 + unit;
+constants.step492      = constants.step491 + unit;
 constants.step493      = constants.step492 + unit;
+constants.step494      = constants.step493 + unit;
 
-
-constants.step50      = constants.step493 + unit;
+constants.step50      = constants.step494 + unit;
 constants.step501      = constants.step50 + unit;
 constants.step502     = constants.step501 + unit;
 constants.step503      = constants.step502 + unit;
@@ -91,7 +114,6 @@ constants.step503      = constants.step502 + unit;
 constants.step51      = constants.step503 + unit;
 constants.step511      = constants.step51 + unit;
 constants.step512      = constants.step511 + unit;
-constants.step5121      = constants.step512 + unit/2;
 constants.step513      = constants.step512 + unit;
 constants.step514      = constants.step513 + unit;
 

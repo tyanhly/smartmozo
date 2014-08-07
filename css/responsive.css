@@ -238,30 +238,43 @@ and (max-device-width : 999px) {
 }
 
 @media only screen 
-and (min-device-height : 768px)  {
+and (min-device-height : 700px)  {
 	
-	#AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
+	#ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
 		bottom:10px;
+	}
+	#SmartMozo{
+		margin-bottom: 30px;
 	}
 }
 @media only screen 
 and (min-device-height : 900px)  {
 	
-	#AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
-		bottom:8%;
-	}
-}
-
-@media only screen 
-and (min-device-height : 1080px)  {
-	#AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
+	#ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
 		bottom:15%;
 	}
+	#SmartMozo{
+		margin-bottom: 100px;
+	}
 }
 
 @media only screen 
-and (min-device-height : 1280px)  {
-	#AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
+and (min-device-height : 1000px)  {
+	#ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
+		bottom:15%;
+	}
+	#SmartMozo{
+		margin-bottom: 250px;
+	}
+}
+
+@media only screen 
+and (min-device-height : 1100px)  {
+	#ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
 		bottom:20%;
+	}
+	
+	#SmartMozo{
+		margin-bottom: 350px;
 	}
 }
