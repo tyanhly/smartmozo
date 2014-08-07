@@ -67,8 +67,8 @@ and (max-device-width : 999px) {
 
 	#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
 
-		height: 200px!important;
-		width:  200px!important;
+		height: 230px!important;
+		width:  230px!important;
 	}
 
 	#char1,#char3, #char5,  #char7,  #char9, #char11{
@@ -123,6 +123,10 @@ and (max-device-width : 999px) {
 		left:100px;
 	}
 
+	#MemberSmartMozo{
+		left:60px;
+	}
+
 	#AvailableIphone{	
 		left: -110px;
 		top:-850px;
@@ -159,7 +163,8 @@ and (max-device-width : 999px) {
 	}
 	#MemberMozoMsg{
 
-		top:-700px;
+		top:-640px;
+		right:0px;
 	}
 
 	#DirectionMozoMsg .mozo-msg, #MemberMozoMsg .mozo-msg, 
@@ -169,6 +174,12 @@ and (max-device-width : 999px) {
 		font-size:8pt;
 		line-height: 11pt;
 		padding: 42px 15px 40px 15px;
+	}
+	#MemberMozoMsg .mozo-msg{
+		height: 230px;
+		width: 140px;
+		line-height: 9pt;
+		padding: 20px 15px 40px 15px;
 	}
 
 
@@ -181,7 +192,7 @@ and (max-device-width : 999px) {
 
 	#MemberIphone{	
 
-		left: -90px;
+		left: -60px;
 		top:-280px;
 		background-position: center 0px;
 		background-size: contain;
@@ -201,13 +212,13 @@ and (max-device-width : 999px) {
 	#ChatIphone{	
 		left: 120px;
 		height: 450px;
-		top:-990px;
+		top:-940px;
 	}
 
 
 	#ChatMozoMsg{	
 		right: -35px;
-		top:-1330px;
+		top:-1260px;
 
 		width: 140px;
 		height: 180px;
@@ -224,4 +235,33 @@ and (max-device-width : 999px) {
 
 
 /* Styles */
+}
+
+@media only screen 
+and (min-device-height : 768px)  {
+	
+	#AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
+		bottom:10px;
+	}
+}
+@media only screen 
+and (min-device-height : 900px)  {
+	
+	#AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
+		bottom:8%;
+	}
+}
+
+@media only screen 
+and (min-device-height : 1080px)  {
+	#AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
+		bottom:15%;
+	}
+}
+
+@media only screen 
+and (min-device-height : 1280px)  {
+	#AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
+		bottom:20%;
+	}
 }

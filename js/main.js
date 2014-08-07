@@ -91,6 +91,7 @@ constants.step503      = constants.step502 + unit;
 constants.step51      = constants.step503 + unit;
 constants.step511      = constants.step51 + unit;
 constants.step512      = constants.step511 + unit;
+constants.step5121      = constants.step512 + unit/2;
 constants.step513      = constants.step512 + unit;
 constants.step514      = constants.step513 + unit;
 
@@ -99,12 +100,14 @@ constants.step53      = constants.step52 + 3*unit;
 
 constants.step54      = constants.step53 + unit;
 
-constants.step541      = constants.step54 + 20;
-constants.step542      = constants.step54 + 40;
-constants.step543      = constants.step54 + 60;
-constants.step544      = constants.step54 + 80;
+constants.step541      = constants.step54 + unit/5;
+constants.step542      = constants.step541 + unit/5;
+constants.step543      = constants.step542 + unit/5;
+constants.step544      = constants.step543 + unit/5;
+constants.step545      = constants.step544 + unit/5;
+constants.step546      = constants.step545 + unit/5;
 
-constants.step55      = constants.step54 + unit;
+constants.step55      = constants.step544 + unit;
 constants.step56      = constants.step55 + unit;
 constants.step57      = constants.step56 + unit;
 constants.step58      = constants.step57 + unit;
