@@ -234,6 +234,14 @@ and (max-device-width : 999px) {
 	}
 
 
+	#Progress2{
+		
+		height:30px; 
+		line-height: 30px;
+		font-size: 11pt;
+	}
+
+
 /* Styles */
 }
 
