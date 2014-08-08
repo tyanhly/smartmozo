@@ -663,6 +663,7 @@ div{
 	color: #fff;
 	z-index: 99999;
 	font-size: 20pt;
+	text-transform: uppercase;
 }
 
 #Progress1{
