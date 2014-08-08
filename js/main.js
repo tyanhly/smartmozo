@@ -102,21 +102,21 @@ constants.step47      = constants.step46 + unit;
 
 constants.step48      = constants.step47 + unit;
 constants.step49      = constants.step48 + unit;
-constants.step491      = constants.step49 + unit;
-constants.step492      = constants.step491 + unit;
-constants.step493      = constants.step492 + unit;
-constants.step494      = constants.step493 + unit;
+constants.step491      = constants.step49 + unit/3;
+constants.step492      = constants.step491 + unit/3;
+constants.step493      = constants.step492 + unit/3;
+constants.step494      = constants.step493 + unit/3;
 
-constants.step50      = constants.step494 + unit;
-constants.step501      = constants.step50 + unit;
-constants.step502     = constants.step501 + unit;
-constants.step503      = constants.step502 + unit;
+constants.step50      = constants.step494 + unit/3;
+constants.step501      = constants.step50 + unit/3;
+constants.step502     = constants.step501 + unit/3;
+constants.step503      = constants.step502 + unit/3;
 
-constants.step51      = constants.step503 + unit;
-constants.step511      = constants.step51 + unit;
-constants.step512      = constants.step511 + unit;
-constants.step513      = constants.step512 + unit;
-constants.step514      = constants.step513 + unit;
+constants.step51      = constants.step503 + unit/3;
+constants.step511      = constants.step51 + unit/3;
+constants.step512      = constants.step511 + unit/3;
+constants.step513      = constants.step512 + unit/3;
+constants.step514      = constants.step513 + unit/3;
 
 constants.step52      = constants.step513 + 2*unit;
 constants.step53      = constants.step52 + 3*unit;

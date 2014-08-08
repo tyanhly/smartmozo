@@ -369,7 +369,8 @@ div{
 	height: 640px;
 	width:  608px;
 	background: url(../img/wmozo_scenario_12.png) no-repeat;
-	background-size:  100% auto;
+	background-size: 90% auto;
+	background-position: top center;
 	margin:60px auto;
 	position: static;
 }
