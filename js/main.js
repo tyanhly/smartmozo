@@ -232,53 +232,70 @@ var s = skrollr.init(
 
 
 
-_isScroll=false;
-_scrollTop = s.getScrollTop();
-setInterval(function(){		
-	_currentScrollTop = s.getScrollTop();
-
-	if(_currentScrollTop !== _scrollTop){
-		_isScroll=true;
-	}else{
-		_isScroll=false;
-	}
-
-	if(_isScroll){
-		$("#scroll").css({"opacity":"0"});
-	}else{
-
-		$("#scroll").css({"opacity":"1" });
-	}
-
-	_scrollTop = _currentScrollTop;
-	// alert(_currentScrollTop);
-},900);
-
-
 /**********************************auto run********************************/
-autoDistance = 20;
+autoDistance = 30;
 autoInterval = 100;
-var _isAutoRun = true;
 var i;
-$(document).on('click taphold',function(e){
 
-	if(_isAutoRun){
+
+$("#scrollPlay").on('click', function(){
+	if($(this).hasClass('pause')){
+		clearInterval(i);
+		$(this).removeClass('pause');
+	}else{
 		i = setInterval(function(){		
 			_currentScrollTop = s.getScrollTop();
 			s.setScrollTop(_currentScrollTop+autoDistance, true);
+		},autoInterval);
+		$(this).addClass('pause');
+	}
+});
+
+/**************************scroll*******************************************/
+
+// _isScroll=false;
+// _scrollTop = s.getScrollTop();
+// setInterval(function(){		
+// 	_currentScrollTop = s.getScrollTop();
+
+// 	if(_currentScrollTop !== _scrollTop){
+// 		_isScroll=true;
+// 	}else{
+// 		_isScroll=false;
+// 	}
+
+// 	if(_isScroll){
+// 		$("#scroll").css({"opacity":"0"});
+// 	}else{
+
+// 		$("#scroll").css({"opacity":"1" });
+// 	}
+
+// 	_scrollTop = _currentScrollTop;
+// 	// alert(_currentScrollTop);
+// },900);
+
+/**************************************mouse auto*************************/
+// var _isAutoRun = true;
+// $(document).on('click taphold',function(e){
+
+// 	if(_isAutoRun){
+// 		i = setInterval(function(){		
+// 			_currentScrollTop = s.getScrollTop();
+// 			s.setScrollTop(_currentScrollTop+autoDistance, true);
 
 			
-		},autoInterval);
-		_isAutoRun=false;
+// 		},autoInterval);
+// 		_isAutoRun=false;
 
-		$('html').addClass('pause');
+// 		$('html').addClass('pause');
 
-	}else{
-		clearInterval(i);
+// 	}else{
+// 		clearInterval(i);
 
-		_isAutoRun=true;
+// 		_isAutoRun=true;
 
-		$('html').removeClass('pause');
-	}
+// 		$('html').removeClass('pause');
+// 	}
 
-});
+// });

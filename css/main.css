@@ -11,11 +11,11 @@
 
 }	 
 html{
-	cursor: url(../img/wmz_mouse_play.png), pointer;
+	/*cursor: url(../img/wmz_mouse_play.png), pointer;*/
 
 }
 html.pause{
-	cursor: url(../img/wmz_mouse_pause.png) , pointer ;	
+	/*cursor: url(../img/wmz_mouse_pause.png) , pointer ;	*/
 }
 *{
 	font-family: 'MyArial', Arial, Helvetica, sans-serif;
@@ -90,17 +90,22 @@ div{
 	z-index: 999999;
 	width: 100%;
 }
-#scroll{
+#scrollPlay{
 
-	background:url(../img/arrow_down.png) no-repeat;
+	background:url(../img/wmz_play.png) no-repeat;
 	background-position: center top ;
 	width: 70px;
 	height: 35px;
 	margin: 0 auto;
-	transition: opacity 1s ease-in-out;
+	opacity: 0.5;
+}
+#scrollPlay:hover{
+	opacity: 1;
 }
 
-
+#scrollPlay.pause{
+	background:url(../img/wmz_pause.png) no-repeat;
+}
 
 #flyCloud{
 	width: 100%;
@@ -118,7 +123,7 @@ div{
 
 #mallGround{	
 	background:#a8e5cC;
-	height: 47px;
+	height:0;
 	width: 100%;
 	bottom: 115px;
 }
@@ -135,7 +140,7 @@ div{
 #outsideMall{
 
 	width: 100%;
-
+	opacity:0;
 	bottom: 55px;
 }
 
