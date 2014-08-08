@@ -10,7 +10,13 @@
 	font-style: normal;
 
 }	 
+html{
+	cursor: url(../img/wmz_mouse_play.png), pointer;
 
+}
+html.pause{
+	cursor: url(../img/wmz_mouse_pause.png) , pointer ;	
+}
 *{
 	font-family: 'MyArial', Arial, Helvetica, sans-serif;
 	text-rendering: optimizeLegibility !important;
@@ -20,8 +26,9 @@
 body{
 	min-height:100%;
 	background:#81D2EC;
+	}
 
-}
+
 
 div{
 	/*max-width:1280px;*/
@@ -358,7 +365,7 @@ div{
 	width:  608px;
 	background: url(../img/wmozo_scenario_12.png) no-repeat;
 	background-size:  100% auto;
-	margin:30px auto;
+	margin:60px auto;
 	position: static;
 }
 
@@ -642,18 +649,13 @@ div{
 	top:0; 
 	height:50px; 
 	width:100%;
-	line-height: 50px;
-	vertical-align: middle;
-
-	text-align: center;
-	background: #fff;
 
 }
 #Progress2{
 	
 	position:absolute; 
 	top:0; 
-	height:50px; 
+	height:100%; 
 	width:100%;
 	line-height: 50px;
 	vertical-align: middle;
@@ -661,6 +663,7 @@ div{
 	color: #fff;
 	z-index: 99999;
 	font-size: 20pt;
+	font-weight: 900;
 	text-transform: uppercase;
 }
 
@@ -687,7 +690,6 @@ div{
 	padding:50px 50px;
 	font-weight: 900;
 }
-
 
 .mozo-header{
 

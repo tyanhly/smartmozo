@@ -234,6 +234,11 @@ and (max-device-width : 999px) {
 	}
 
 
+	#UserProfile{
+		
+		height:30px; 
+		
+	}
 	#Progress2{
 		
 		height:30px; 

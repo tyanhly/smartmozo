@@ -14,8 +14,8 @@ constants.step9      = constants.step8 + unit/2;
 constants.step10      = constants.step9 + unit;
 constants.step11      = constants.step10 + unit;
 constants.step12      = constants.step11 + unit;
-constants.step13      = constants.step12 + unit; 
-constants.step14      = constants.step13 + unit;
+//constants.step13      = constants.step12 + unit; 
+constants.step14      = constants.step12 + unit;
 
 constants.step145      = constants.step14 + unit;
 
@@ -27,9 +27,9 @@ constants.step19      = constants.step18 + unit;
 
 
 
-constants.step20      = constants.step19 + 3/2*unit;
-constants.step201     = constants.step20 + 3/2*unit;
-constants.step21      = constants.step201 + 3/2* unit;
+constants.step20      = constants.step19 + unit;
+constants.step201     = constants.step20 + unit;
+constants.step21      = constants.step201 +  unit;
 
 constants.step22      = constants.step21 + unit;
 constants.step221      = constants.step22 + unit;
@@ -45,8 +45,9 @@ constants.step2217      = constants.step2216 + unit/2;
 constants.step222      = constants.step2217 + unit;
 constants.step223      = constants.step222 + unit;
 constants.step224      = constants.step223 + unit;
+constants.step225      = constants.step224 + unit;
 
-constants.step23      = constants.step224 + unit;
+constants.step23      = constants.step225 + unit;
 constants.step24      = constants.step23 + unit;
 constants.step25      = constants.step24 + unit;
 
@@ -131,7 +132,8 @@ constants.step546      = constants.step545 + unit/5;
 
 constants.step55      = constants.step544 + unit;
 constants.step56      = constants.step55 + unit;
-constants.step57      = constants.step56 + unit;
+constants.step561      = constants.step56 + unit;
+constants.step57      = constants.step561 + unit;
 constants.step58      = constants.step57 + unit;
 constants.step59      = constants.step58 + unit;
 
@@ -144,7 +146,8 @@ constants.step63      = constants.step62 + unit;
 constants.step64      = constants.step63 + unit;
 constants.step65      = constants.step64 + unit;
 constants.step66      = constants.step65 + unit;
-constants.step67      = constants.step66 + unit;
+constants.step661      = constants.step66 + unit;
+constants.step67      = constants.step661 + unit;
 constants.step68      = constants.step67 + unit;
 constants.step69      = constants.step68 + unit;
 
@@ -155,7 +158,8 @@ constants.step72      = constants.step71 + unit;
 constants.step73      = constants.step72 + unit;
 constants.step74      = constants.step73 + unit;
 constants.step75      = constants.step74 + unit;
-constants.step76      = constants.step75 + unit;
+constants.step751      = constants.step75 + unit;
+constants.step76      = constants.step751 + unit;
 constants.step77      = constants.step76 + unit;
 constants.step78      = constants.step77 + unit;
 constants.step79      = constants.step78+ unit;
@@ -165,7 +169,8 @@ constants.step80      = constants.step79 + unit;
 constants.step81      = constants.step80 + unit;
 constants.step82      = constants.step81 + unit;
 constants.step83      = constants.step82 + unit;
-constants.step84      = constants.step83 + unit;
+constants.step831      = constants.step83 + unit;
+constants.step84      = constants.step831 + unit;
 constants.step85      = constants.step84 + unit;
 constants.step86      = constants.step85 + unit;
 constants.step87      = constants.step86 + unit;
@@ -175,7 +180,8 @@ constants.step89      = constants.step88 + unit;
 
 constants.step90      = constants.step89 + unit;
 constants.step91      = constants.step90 + unit;
-constants.step92      = constants.step91 + unit;
+constants.step911      = constants.step91 + unit;
+constants.step92      = constants.step911 + unit;
 constants.step93      = constants.step92 + unit;
 constants.step94      = constants.step93 + unit;
 constants.step95      = constants.step94 + unit;
@@ -184,8 +190,10 @@ constants.step97      = constants.step96 + unit;
 constants.step98      = constants.step97 + unit;
 constants.step99      = constants.step98 + unit;
 
+constants.step991      = constants.step99 + unit;
 
-constants.step100      = constants.step99 + unit;
+
+constants.step100      = constants.step991 + unit;
 constants.step101      = constants.step100 + unit;
 constants.step102      = constants.step101 + unit;
 constants.step103      = constants.step102 + unit;
@@ -193,7 +201,8 @@ constants.step104      = constants.step103 + unit;
 constants.step105      = constants.step104 + unit;
 constants.step106      = constants.step105 + unit;
 constants.step107      = constants.step106 + unit;
-constants.step108      = constants.step107 + unit;
+constants.step1071      = constants.step107 + unit;
+constants.step108      = constants.step1071 + unit;
 constants.step109      = constants.step108 + unit;
 
 
@@ -205,6 +214,7 @@ constants.step113      = constants.step112 + unit;
 constants.step114      = constants.step113 + unit;
 constants.step115      = constants.step114 + unit;
 constants.step116      = constants.step115 + unit;
+constants.step1161      = constants.step116 + unit;
 constants.step117      = constants.step116 + unit;
 constants.step118      = constants.step117 + unit;
 constants.step119      = constants.step118 + unit;
@@ -215,6 +225,9 @@ var s = skrollr.init(
 {
 	constants: constants
 });
+
+
+
 
 
 
@@ -240,3 +253,32 @@ setInterval(function(){
 	_scrollTop = _currentScrollTop;
 	// alert(_currentScrollTop);
 },900);
+
+
+/**********************************auto run********************************/
+autoDistance = 20;
+autoInterval = 100;
+var _isAutoRun = true;
+var i;
+$(document).on('click taphold',function(e){
+
+	if(_isAutoRun){
+		i = setInterval(function(){		
+			_currentScrollTop = s.getScrollTop();
+			s.setScrollTop(_currentScrollTop+autoDistance, true);
+
+			
+		},autoInterval);
+		_isAutoRun=false;
+
+		$('html').addClass('pause');
+
+	}else{
+		clearInterval(i);
+
+		_isAutoRun=true;
+
+		$('html').removeClass('pause');
+	}
+
+});
