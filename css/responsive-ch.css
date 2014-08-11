@@ -1,0 +1,97 @@
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 999px) {
+
+	#titleCloud{
+		padding: 30px 30px 10px 20px;
+	}
+
+	#titleCloudMsg {
+		
+		line-height: 22pt;
+		font-size: 18pt;
+	}
+	#mallProblemMsg{
+
+		font-size: 18pt;
+	}
+
+	#bigger{
+		line-height: 30pt;
+	}
+
+
+	#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
+
+		font-size: 13pt;
+		padding: 15px;
+	}
+
+
+	#char2,#char3, #char6{
+		padding-top:195px;
+	}
+
+
+	#ideal{
+		padding: 45px 100px;
+		font-size: 13pt;
+	}
+
+
+	#idealMsg{
+		font-size:10pt;
+	}
+
+	#MozoMsg .mozo-msg{
+		line-height: 35pt;
+		font-size: 29pt;
+		padding:4px 20px;
+	}
+
+	#AvailableMozoMsg .mozo-msg{
+		padding: 5px 18px;
+		font-size:10pt;
+		line-height: 12pt;
+	}
+
+
+	#MemberMozoMsg .mozo-msg, #CouponMozoMsg .mozo-msg, #HotPotMozoMsg .mozo-msg, #PromotionMozoMsg .mozo-msg{
+		padding: 26px 15px 25px 15px;
+	}
+
+	#DirectionMozoMsg .mozo-msg, #MemberMozoMsg .mozo-msg,#ChatMozoMsg .mozo-msg, #CouponMozoMsg .mozo-msg, #HotPotMozoMsg .mozo-msg, #PromotionMozoMsg .mozo-msg{
+		font-size: 10pt;
+		line-height: 12pt;
+	}
+	#DirectionMozoMsg .mozo-msg{
+		padding: 18px 22px 0px 22px;
+	}
+	#PromotionMozoMsg .mozo-msg,  #MemberMozoMsg .mozo-msg, #CouponMozoMsg .mozo-msg {
+		font-size: 12pt;
+		line-height: 14pt;
+	}
+
+/* Styles */
+}
+
+@media only screen 
+and (min-device-height : 700px)  {
+	
+	
+}
+@media only screen 
+and (min-device-height : 900px)  {
+	
+}
+
+@media only screen 
+and (min-device-height : 1000px)  {
+	
+}
+
+@media only screen 
+and (min-device-height : 1100px)  {
+	
+}
+/*//f06566*/

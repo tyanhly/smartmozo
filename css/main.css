@@ -10,7 +10,13 @@
 	font-style: normal;
 
 }	 
+html{
+	/*cursor: url(../img/wmz_mouse_play.png), pointer;*/
 
+}
+html.pause{
+	/*cursor: url(../img/wmz_mouse_pause.png) , pointer ;	*/
+}
 *{
 	font-family: 'MyArial', Arial, Helvetica, sans-serif;
 	text-rendering: optimizeLegibility !important;
@@ -20,8 +26,9 @@
 body{
 	min-height:100%;
 	background:#81D2EC;
+	}
 
-}
+
 
 div{
 	/*max-width:1280px;*/
@@ -83,17 +90,39 @@ div{
 	z-index: 999999;
 	width: 100%;
 }
-#scroll{
+#scrollPlay{
 
-	background:url(../img/arrow_down.png) no-repeat;
+	background:url(../img/wmz_play.png) no-repeat;
 	background-position: center top ;
 	width: 70px;
 	height: 35px;
 	margin: 0 auto;
-	transition: opacity 1s ease-in-out;
+	opacity: 0.5;
+}
+#scrollPlay:hover{
+	opacity: 1;
 }
 
+#scrollPlay.pause{
+	background:url(../img/wmz_pause.png) no-repeat;
+}
 
+#DemoFrame{
+	position: fixed;
+	top: 1%;
+	right:0;
+	z-index: 999999;
+	width: 40px;
+	text-align: center;
+	line-height: 25px;
+}
+
+#DemoFrame a{
+	opacity: 0.5;
+}
+#DemoFrame a:hover{
+	opacity: 1;
+}
 
 #flyCloud{
 	width: 100%;
@@ -111,7 +140,7 @@ div{
 
 #mallGround{	
 	background:#a8e5cC;
-	height: 47px;
+	height:0;
 	width: 100%;
 	bottom: 115px;
 }
@@ -128,7 +157,7 @@ div{
 #outsideMall{
 
 	width: 100%;
-
+	opacity:0;
 	bottom: 55px;
 }
 
@@ -266,7 +295,6 @@ div{
 
 	background-position: top center;
 	background-size: 100% auto;
-	z-index: 100;
 }
 
 
@@ -298,68 +326,96 @@ div{
 
 #char1,#char3, #char5,  #char7,  #char9, #char11{
 
-	left:20%;
+	left:30%;
 }
 
 
  #char2, #char4, #char6, #char8, #char10{
 
-	right:20%;
+	right:30%;
 }
 
 
 #char1{
-	background: url(../img/wmozo_scenario_1.png) no-repeat;
+	background: url(../img/wmzt_scenario_1.png) no-repeat;
 }
 
 #char2{
-	background: url(../img/wmozo_scenario_2.png) no-repeat;
+	background: url(../img/wmzt_scenario_2.png) no-repeat;
 }
 
 #char3{
-	background: url(../img/wmozo_scenario_3.png) no-repeat;
+	background: url(../img/wmzt_scenario_3.png) no-repeat;
 }
 
 #char4{
-	background: url(../img/wmozo_scenario_4.png) no-repeat;
+	background: url(../img/wmzt_scenario_4.png) no-repeat;
 }
 
 #char5{
-	background: url(../img/wmozo_scenario_5.png) no-repeat;
+	background: url(../img/wmzt_scenario_5.png) no-repeat;
 }
 
 #char6{
-	background: url(../img/wmozo_scenario_6.png) no-repeat;
+	background: url(../img/wmzt_scenario_6.png) no-repeat;
 }
 
 #char7{
-	background: url(../img/wmozo_scenario_7.png) no-repeat;
+	background: url(../img/wmzt_scenario_7.png) no-repeat;
 }
 
 #char8{
-	background: url(../img/wmozo_scenario_8.png) no-repeat;
+	background: url(../img/wmzt_scenario_8.png) no-repeat;
 }
 
 #char9{
-	background: url(../img/wmozo_scenario_9.png) no-repeat;
+	background: url(../img/wmzt_scenario_9.png) no-repeat;
 }
 
 #char10{
-	background: url(../img/wmozo_scenario_10.png) no-repeat;
+	background: url(../img/wmzt_scenario_10.png) no-repeat;
 }
 
 #char11{
-	background: url(../img/wmozo_scenario_11.png) no-repeat;
+	background: url(../img/wmzt_scenario_11.png) no-repeat;
 	position:static!important; margin:230px auto 0 auto;
+}
+
+
+
+#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
+
+	color: #f06566;
+	font-size: 13pt;
+	font-weight: 900;
+	padding: 22px 85px;
+	text-align: center;
+}
+
+#char11{
+
+	padding: 12px 70px;
+}
+
+
+#char2,#char3, #char6{
+	padding-top:302px;
 }
 
 #ideal{
 	height: 640px;
 	width:  608px;
-	background: url(../img/wmozo_scenario_12.png) no-repeat;
-	background-size:  100% auto;
-	margin:30px auto;
+	background: url(../img/wmzt_scenario_12.png) no-repeat;
+	background-size: 90% auto;
+	background-position: top center;
+	margin:60px auto;
 	position: static;
+
+	text-align: center;
+	padding: 110px 185px;
+	font-size: 17pt;
+	color: #f06566;
+	font-weight: 900;
 }
 
 #idealFrame{
@@ -368,7 +424,10 @@ div{
 	left:0;
 	height: 100%;
 	width: 100%;
-	z-index: 1000;
+}
+
+#idealMsg{
+	color:#56aa65;
 }
 
 #SmartMozoFrame{
@@ -642,20 +701,13 @@ div{
 	top:0; 
 	height:50px; 
 	width:100%;
-	line-height: 50px;
-	vertical-align: middle;
 
-	text-align: center;
-	background: #fff;
-
-	color: #f06566;
-	font-size: 20pt;
 }
 #Progress2{
 	
 	position:absolute; 
 	top:0; 
-	height:50px; 
+	height:100%; 
 	width:100%;
 	line-height: 50px;
 	vertical-align: middle;
@@ -663,6 +715,7 @@ div{
 	color: #fff;
 	z-index: 99999;
 	font-size: 20pt;
+	font-weight: 900;
 	text-transform: uppercase;
 }
 
@@ -689,7 +742,6 @@ div{
 	padding:50px 50px;
 	font-weight: 900;
 }
-
 
 .mozo-header{
 
