@@ -67,7 +67,7 @@ div{
 	background:#fff;
 }
 
-#screen13{
+#screen14{
 	height: 180px;
 
 }
@@ -84,7 +84,7 @@ div{
 	margin: 0 auto;
 }
 
-#scrollFrame{
+#ScrollFrame{
 	position: fixed;
 	bottom: 0;
 	z-index: 999999;
@@ -102,6 +102,8 @@ div{
 #scrollPlay:hover{
 	opacity: 1;
 }
+
+
 
 #scrollPlay.pause{
 	background:url(../img/wmz_pause.png) no-repeat;
@@ -318,6 +320,7 @@ div{
 	width:  360px;
 	position: absolute;
 	background-size: auto 100% !important;
+
 }
 
 
@@ -334,54 +337,54 @@ div{
 
 
 #char1{
-	background: url(../img/wmozo_scenario_1.png) no-repeat;
+	background: url(../img/wmzt_scenario_1.png) no-repeat;
 }
 
 #char2{
-	background: url(../img/wmozo_scenario_2.png) no-repeat;
+	background: url(../img/wmzt_scenario_2.png) no-repeat;
 }
 
 #char3{
-	background: url(../img/wmozo_scenario_3.png) no-repeat;
+	background: url(../img/wmzt_scenario_3.png) no-repeat;
 }
 
 #char4{
-	background: url(../img/wmozo_scenario_4.png) no-repeat;
+	background: url(../img/wmzt_scenario_4.png) no-repeat;
 }
 
 #char5{
-	background: url(../img/wmozo_scenario_5.png) no-repeat;
+	background: url(../img/wmzt_scenario_5.png) no-repeat;
 }
 
 #char6{
-	background: url(../img/wmozo_scenario_6.png) no-repeat;
+	background: url(../img/wmzt_scenario_6.png) no-repeat;
 }
 
 #char7{
-	background: url(../img/wmozo_scenario_7.png) no-repeat;
+	background: url(../img/wmzt_scenario_7.png) no-repeat;
 }
 
 #char8{
-	background: url(../img/wmozo_scenario_8.png) no-repeat;
+	background: url(../img/wmzt_scenario_8.png) no-repeat;
 }
 
 #char9{
-	background: url(../img/wmozo_scenario_9.png) no-repeat;
+	background: url(../img/wmzt_scenario_9.png) no-repeat;
 }
 
 #char10{
-	background: url(../img/wmozo_scenario_10.png) no-repeat;
+	background: url(../img/wmzt_scenario_10.png) no-repeat;
 }
 
 #char11{
-	background: url(../img/wmozo_scenario_11.png) no-repeat;
+	background: url(../img/wmzt_scenario_11.png) no-repeat;
 	position:static!important; margin:230px auto 0 auto;
 }
 
 #ideal{
 	height: 640px;
 	width:  608px;
-	background: url(../img/wmozo_scenario_12.png) no-repeat;
+	background: url(../img/wmzt_scenario_12.png) no-repeat;
 	background-size: 90% auto;
 	background-position: top center;
 	margin:60px auto;

@@ -1,5 +1,6 @@
-<html class="skrollr skrollr-desktop ">
+<html class="skrollr skrollr-desktop " lang="zh-CN" mlns="http://www.w3.org/1999/xhtml" lang="zh" xml:lang="zh">
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=2, maximum-scale=1">
 	<!--
@@ -11,8 +12,10 @@
 -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main-ch.css">
 <link rel="stylesheet" href="css/fixed-positioning.css"  type="text/css" />
 <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/responsive-ch.css">
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.mobile-1.4.3.min.js"></script>
 
@@ -22,17 +25,21 @@
 
 </head>
 <body >
-	<div id="scrollFrame">
+	<div id="ScrollFrame">
 
 		<div id="scrollPlay" ></div>
 	</div>
-	
 	<div id="DemoFrame">
 
 		<a href="http://big-labs.com:8135/ssm-web" target="_blank" >
 			<img id="DemoImg" src="img/wmz_viewdemo.png" />
 		</a>
 	</div>
+
+	<div id="RightFrame">
+
+	</div>
+	
 	<div id="body">
 		<div id="screen1" data-_step1="top:40%;"  data-_step2="top:20%;" data-_step3="top:2%;" data-_step14 data-_step145 data-_step15=" top:-100%" >
 			<div id="smartMozoLogo"   >
@@ -60,14 +67,14 @@
 			<div id="mallProblemMsg" 
 				data-_step10="transform:scale(0);opacity:0.5;"
 				data-_step11="transform:scale(1);opacity:1;" >
-				MALLS ARE GETTING BIGGER...
+				商场宏大、琳琅满目 
 			</div>
 			<div id="titleCloudFrame" 
 				data-_step11="transform:scale(2); opacity:0;"
 				data-_step12="opacity:1; "
 				data-_step14="transform:scale(1)"  >
 				<div id="titleCloud" >
-					<div id="titleCloudMsg">SHOPPING IS <br /> A PROBLEM...?</div>
+					<div id="titleCloudMsg">购物者<br />无以适从...?</div>
 				</div>
 			</div>
 
@@ -119,7 +126,7 @@
 				data-_step2213="transform:scale(1);"
 				data-_step2214="transform:scale(1.1); " data-_step2215="transform:scale(1);"
 								data-_step2216="margin-top:200px;" data-_step2217="margin-top:25px;"
-		    		> Bigger...</div>
+		    		> 商场宏大、琳琅满目</div>
 		    	
 		    </div>
 		</div>
@@ -128,7 +135,7 @@
 		<div id="screen5" data-_step224="top:100%;"  data-_step23="top:0%;"   data-_step53="top:0%;" data-_step54="top:-100%;">
 			<div  id="UserProfile" >
 				<div id="Progress1" data-_step23="width:0%;" data-_step25="width: 100%;"></div>
-				<div id="Progress2" >Shopper Profilling</div>
+				<div id="Progress2" >不同顾客群体</div>
 			</div>
 
 			
@@ -144,7 +151,9 @@
 			data-_step48 
 			data-_step49=" top: 0; left:0%; margin-top:10px; opacity:1;" 
 			data-_step491="opacity:0.4;"
-			data-_step52="opacity:0;"></div>
+			data-_step52="opacity:0;">
+家庭享乐型
+		</div>
 <!-- 
 	
 	
@@ -160,7 +169,9 @@
 				data-_step49 
 				data-_step491=" top:40%; right:0%;margin-top:10px; opacity:1;"
 				data-_step492="opacity:0.4;"
-				 data-_step52="opacity:0;"></div>
+				 data-_step52="opacity:0;">
+社交消费型
+				</div>
 
 			<div class="character" id="char3" 
 				data-_step28=" top:50%;left:20%;transform:scale(0);"  
@@ -171,7 +182,9 @@
 				data-_step491  
 				data-_step492="  top:40%; left:0%;margin-top:10px; opacity:1;"
 				 data-_step493="opacity:0.4;"
-				 data-_step52="opacity:0;"></div>
+				 data-_step52="opacity:0;">
+质量追求型
+				</div>
 
 			<div class="character" id="char4" 
 			data-_step30=" top:50%;right:20%;transform:scale(0);"
@@ -181,7 +194,9 @@
 			 data-_step492 
 			data-_step493="top:0; right:0%;margin-top:10px; opacity:1;" 
 			data-_step494="opacity:0.4;"
-				data-_step52="opacity:0;"></div>
+				data-_step52="opacity:0;">
+商品博览型
+			</div>
 
 
 
@@ -189,27 +204,35 @@
 			data-_step493="top:-100%; "
 			data-_step50="  top:10%; left:10%; opacity:1;" 
 			data-_step501="opacity:0.4;"
-				 data-_step52="opacity:0;"></div>
+				 data-_step52="opacity:0;">
+价值追求型
+				</div>
 
 			<div class="character" id="char6" data-_step34=" top:50%;right:20%;transform:scale(0);" data-_step35="top:30%;transform:scale(1);" data-_step351 data-_step36="top:-20%;"data-_step37="top:-100%;" 
 			data-_step50="top:-100%; " 
 			data-_step501="  top:30%;  right:30%; opacity:1;" 
 			data-_step502="opacity:0.4;"
 				 
-			data-_step52="opacity:0;"></div>
+			data-_step52="opacity:0;">
+品牌忠诚型
+		</div>
 
 			<div class="character" id="char7" data-_step36=" top:50%;left:20%;transform:scale(0);"  data-_step37="top:30%;transform:scale(1);"  data-_step371 data-_step38="top:20%;" data-_step39="top:-100%;" 
 			data-_step501="top:-100%; " 
 			data-_step502="  top:10%; left:30%; opacity:1;"
 			data-_step503="opacity:0.4;"
 				 
-			data-_step52="opacity:0;"></div>
+			data-_step52="opacity:0;">
+品牌注重型
+		</div>
 
 			<div class="character" id="char8" data-_step38=" top:50%;right:20%;transform:scale(0);" data-_step39="top:30%;transform:scale(1);" data-_step391 data-_step40="top:-20%;"data-_step41="top:-100%;" 
 			data-_step502="top:-100%; " 
 			data-_step503="  top:30%; right:10%; opacity:1;" 
 			data-_step51="opacity:0.4;"
-			data-_step52="opacity:0;"></div>
+			data-_step52="opacity:0;">
+性价比对型
+		</div>
 
 
 
@@ -218,13 +241,17 @@
 
 			data-_step51="  top:20%; left:10%; opacity:1;" 
 			data-_step511="opacity:0.4;"
-			data-_step52="opacity:0;"></div>
+			data-_step52="opacity:0;">
+享乐购物型
+		</div>
 
 			<div  class="character" id="char10" data-_step42=" top:50%;right:20%;transform:scale(0);" data-_step43="top:30%;transform:scale(1);" data-_step431 data-_step44="top:-20%;"data-_step45="top:-100%;" 
 			data-_step51="top:-100%; " 
 			data-_step511="  top:20%; right:10%; opacity:1;" 
 			data-_step512="   opacity:0.4;"
-			data-_step52="opacity:0;"></div>
+			data-_step52="opacity:0;">
+定向选购型
+		</div>
 
 			<div id="char11"
 			 data-_step44=" transform:scale(0);"  
@@ -232,10 +259,17 @@
 			 data-_step451="opacity:1"
 			 data-_step452="opacity:0.4"
 			 
-			 data-_step512="   opacity:0; position:static;margin:230px auto 0 auto;" ></div>
+			 data-_step512="   opacity:0; position:static;margin:230px auto 0 auto;" >
+
+匿名娱乐型
+			</div>
 
 			<div id="idealFrame">
-				<div id="ideal" data-_step513="transform:scale(0);" data-_step52="transform:scale(1);" ></div>
+				<div id="ideal" data-_step513="transform:scale(0);" data-_step52="transform:scale(1);" >
+
+				<span style="color:#547E5C;">SmartMozo </span>将为您带来最贴心的购物体验
+
+				</div>
 			</div>
 
 		</div>
@@ -257,7 +291,7 @@
 
 					<div id="MozoMsg" data-_step55="transform:scale(0);" data-_step56="transform:scale(1);">
 
-						<div class="mozo-msg">I'm here your shopping buddy</div>
+						<div class="mozo-msg"><br /><span>我是您忠诚的购物小伙伴</span></div>
 					</div>
 				</div>
 
@@ -271,17 +305,17 @@
 
 		<!--
 		-->
-		<div id="screen6" data-_step57="top:100%;"  data-_step58="top:0%;" data-_step661 data-_step67="top:0%;"  data-_step68="top:-100%;" >
+		<div id="screen7" data-_step57="top:100%;"  data-_step58="top:0%;" data-_step661 data-_step67="top:0%;"  data-_step68="top:-100%;" >
 
 			<div id="AvailableSmartMozoFrame" >
-				<div class="mozo-header">Let me help you shop!</div>
+				<div class="mozo-header">让我为您提供优质的购物服务!</div>
 				<div id="AvailableSmartMozo" data-_step59="transform:translateX(-100%);" data-_step60="transform:translateX(0);"  >
 
 					<div id="AvailableAndroid" data-_step61="transform:scale(0);" data-_step62="transform:scale(1);"></div>
 					<div id="AvailableIphone" data-_step63="transform:scale(0);" data-_step64="transform:scale(1);"></div>
 					<div id="AvailableMozoMsg" data-_step65="transform:scale(0);" data-_step66="transform:scale(1);">
 
-						<div class="mozo-msg"><br />I'm available on</div>
+						<div class="mozo-msg"><br />您能在这些<br />平台找到我哦</div>
 					</div>
 				</div>
 
@@ -290,20 +324,20 @@
 		</div>
 
 		<div style="clear:both;" ></div>
-		<div id="screen7" data-_step67="top:100%;"  data-_step68="top:0%;"   data-_step75="top:0%;" data-_step751 data-_step76="top:-100%;">
+		<div id="screen8" data-_step67="top:100%;"  data-_step68="top:0%;"   data-_step75="top:0%;" data-_step751 data-_step76="top:-100%;">
 
 			<div id="DirectionSmartMozoFrame" >
 
-				<div class="mozo-header">NOW, enjoy your "smartmozo safari"!</div>
+				<div class="mozo-header">现在，让我们一同开始有SmartMozo伴随的旅程吧!</div>
 				<div id="DirectionSmartMozo" data-_step69="transform:translateX(-100%);" data-_step70="transform:translateX(0);"  >
 					<div id="DirectionIphone" data-_step71="transform:scale(0);" data-_step72="transform:scale(1);"></div>
 				
 					<div id="DirectionMozoMsg" data-_step73="transform:scale(0);" data-_step74="transform:scale(1);">
 
 						<div class="mozo-msg"><br />
-						Know where you are<br /><br /><br />
-						What's news and hots around you<br /><br /><br />
-						And how best to get there
+						先看看您所在的地点<br /><br /><br />
+						让我告诉您附近最火热和最优惠的购物资讯<br /><br /><br />
+						并带领您去到您指定的商铺
 						</div>
 					</div>
 				</div>
@@ -314,11 +348,11 @@
 
 
 		<div style="clear:both;" ></div>
-		<div id="screen8"  data-_step751="top:100%;" data-_step76="top:0%;"  data-_step83="top:0%;" data-_step831 data-_step84="top:-100%;">
+		<div id="screen9"  data-_step751="top:100%;" data-_step76="top:0%;"  data-_step83="top:0%;" data-_step831 data-_step84="top:-100%;">
 
 			<div id="PromotionSmartMozoFrame" >
 
-				<div class="mozo-header">are you looking for hot buys?</div>
+				<div class="mozo-header">您在寻找以下热卖商品吗？</div>
 				
 				<div id="PromotionSmartMozo" data-_step77="opacity:0" data-_step78="opacity:1;"  >
 					<div id="PromotionIphone" data-_step79="transform:scale(0);" data-_step80="transform:scale(1);"></div>
@@ -327,8 +361,8 @@
 
 						<div class="mozo-msg">
 						<br /><br />
-						Hot Deals SmartMozo<br /><br /><br /><br /><br />
-						Know what you want
+						SmartMozo为您提供贴心<br /><br /><br /><br /><br />
+						的商品资讯
 						</div>
 					</div>
 				</div>
@@ -339,11 +373,11 @@
 
 
 		<div style="clear:both;" ></div>
-		<div id="screen9"  data-_step831="top:100%;" data-_step84="top:0%;" data-_step91="top:0%;" data-_step911 data-_step92="top:-100%;">
+		<div id="screen10"  data-_step831="top:100%;" data-_step84="top:0%;" data-_step91="top:0%;" data-_step911 data-_step92="top:-100%;">
 
 			<div id="HotPotSmartMozoFrame" >
 
-				<div class="mozo-header">Where are the hot spots?</div>
+				<div class="mozo-header">大受好评的商铺都有哪些呢？</div>
 				
 				<div id="HotPotSmartMozo" data-_step85="opacity:0" data-_step86="opacity:1;"  >
 
@@ -351,9 +385,8 @@
 					<div id="HotPotMozoMsg" data-_step89="transform:scale(0);" data-_step90="transform:scale(1);">
 
 						<div class="mozo-msg">
-						Know
-						<br /> the trends inside shopping mall<br /><br /><br /><br /><br />
-						And catch the hot stuffs around you
+						<br />SmartMozo<br />为您提供商场内的潮流资讯<br /><br /><br /><br /><br />
+						并为您捕捉离您最近的热卖商品信息
 						</div>
 					</div>
 				</div>
@@ -366,11 +399,11 @@
 
 
 		<div style="clear:both;" ></div>
-		<div id="screen10"  data-_step911="top:100%;" data-_step92="top:0%;" data-_step99="top:0%;" data-_step991 data-_step100="top:-100%;">
+		<div id="screen11"  data-_step911="top:100%;" data-_step92="top:0%;" data-_step99="top:0%;" data-_step991 data-_step100="top:-100%;">
 
 			<div id="CouponSmartMozoFrame" >
 
-				<div class="mozo-header">Today's deals! Grab it now!</div>
+				<div class="mozo-header">今日特价！不要错过哦！</div>
 				
 				<div id="CouponSmartMozo" data-_step93="opacity:0" data-_step94="opacity:1;"  >
 
@@ -379,9 +412,16 @@
 
 						<div class="mozo-msg">
 						<br />
-						CLaim
-						<br /> Your rewards for being.<br /><br /><br /><br /><br />
-						A shopper of smartmozo
+						赶快领取
+
+						<br />
+						SmartMozo
+
+						<br />
+						<br />
+						<br />
+						<br />
+						为您送出的电子优惠劵吧<br /><br /><br /><br /><br />
 						</div>
 					</div>
 				</div>
@@ -393,11 +433,11 @@
 
 
 		<div style="clear:both;" ></div>
-		<div id="screen11"  data-_step991="top:100%;" data-_step100="top:0%;" data-_step107="top:0%;" data-_step1071 data-_step108="top:-100%;">
+		<div id="screen12"  data-_step991="top:100%;" data-_step100="top:0%;" data-_step107="top:0%;" data-_step1071 data-_step108="top:-100%;">
 
 			<div id="MemberSmartMozoFrame" >
 
-				<div class="mozo-header">Be a member shop smart</div>
+				<div class="mozo-header">注册成为会员能得到更多贴心服务哦</div>
 				
 				<div id="MemberSmartMozo" data-_step101="opacity:0" data-_step102="opacity:1;"  >
 
@@ -406,8 +446,9 @@
 
 						<div class="mozo-msg">
 						<br />
-						Enjoy more and more shopping.<br /><br /><br /><br />
-						Excitements smartmozo brings to you
+						SmartMozo<br /> 将为您带来
+						<br /><br /><br />
+						无尽的购物喜悦
 						</div>
 					</div>
 				</div>
@@ -421,10 +462,10 @@
 
 		<div style="clear:both;" ></div>
 
-		<div id="screen12" data-_step1071="top:100%;"  data-_step108="top:0%;"  data-_step108="top:0;" data-_step116="top:0;"  data-_step117="top:-180px;" >
+		<div id="screen13" data-_step1071="top:100%;"  data-_step108="top:0%;"  data-_step108="top:0;" data-_step116="top:0;"  data-_step117="top:-180px;" >
 
 			<div id="ChatSmartMozoFrame" >
-				<div class="mozo-header">Let's chat!</div>
+				<div class="mozo-header">找呀找呀找朋友！</div>
 				<div id="ChatSmartMozo" data-_step109="transform:translateX(100%);" data-_step110="transform:translateX(0);"  >
 
 					<div id="ChatAndroid" data-_step111="transform:scale(0);" data-_step112="transform:scale(1);"></div>
@@ -432,7 +473,7 @@
 					<div id="ChatMozoMsg" data-_step115="transform:scale(0);" data-_step116="transform:scale(1);">
 
 						<div class="mozo-msg">
-						<br /> Shopping <br /> is more fun when you have friends to tag along</div>
+						<br /> 随时随地和同在商场内的小伙伴进行交流能让您的购物之旅变得更有趣</div>
 					</div>
 				</div>
 
@@ -440,14 +481,13 @@
 		</div>
 
 		<div style="clear:both;" ></div>
-		<div id="screen13" data-_step116="bottom:-180px;"  data-_step117="bottom:0;" >		
+		<div id="screen14" data-_step116="bottom:-180px;"  data-_step117="bottom:0;" >		
 			<div id="biglapsLogo" >
 			</div>
 		</div>
 	</div>
 </div>
 
-<div id="tail"></div>
 
 <script type="text/javascript" src="js/main.js?34343"></script>
 
