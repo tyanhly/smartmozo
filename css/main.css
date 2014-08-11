@@ -109,14 +109,18 @@ div{
 
 #DemoFrame{
 	position: fixed;
-	top: 45%;
+	top: 1%;
 	right:0;
 	z-index: 999999;
+	width: 40px;
+	text-align: center;
+	line-height: 25px;
 }
-#DemoImg{
+
+#DemoFrame a{
 	opacity: 0.5;
 }
-#DemoImg:hover{
+#DemoFrame a:hover{
 	opacity: 1;
 }
 
@@ -291,7 +295,6 @@ div{
 
 	background-position: top center;
 	background-size: 100% auto;
-	z-index: 100;
 }
 
 
@@ -334,58 +337,85 @@ div{
 
 
 #char1{
-	background: url(../img/wmozo_scenario_1.png) no-repeat;
+	background: url(../img/wmzt_scenario_1.png) no-repeat;
 }
 
 #char2{
-	background: url(../img/wmozo_scenario_2.png) no-repeat;
+	background: url(../img/wmzt_scenario_2.png) no-repeat;
 }
 
 #char3{
-	background: url(../img/wmozo_scenario_3.png) no-repeat;
+	background: url(../img/wmzt_scenario_3.png) no-repeat;
 }
 
 #char4{
-	background: url(../img/wmozo_scenario_4.png) no-repeat;
+	background: url(../img/wmzt_scenario_4.png) no-repeat;
 }
 
 #char5{
-	background: url(../img/wmozo_scenario_5.png) no-repeat;
+	background: url(../img/wmzt_scenario_5.png) no-repeat;
 }
 
 #char6{
-	background: url(../img/wmozo_scenario_6.png) no-repeat;
+	background: url(../img/wmzt_scenario_6.png) no-repeat;
 }
 
 #char7{
-	background: url(../img/wmozo_scenario_7.png) no-repeat;
+	background: url(../img/wmzt_scenario_7.png) no-repeat;
 }
 
 #char8{
-	background: url(../img/wmozo_scenario_8.png) no-repeat;
+	background: url(../img/wmzt_scenario_8.png) no-repeat;
 }
 
 #char9{
-	background: url(../img/wmozo_scenario_9.png) no-repeat;
+	background: url(../img/wmzt_scenario_9.png) no-repeat;
 }
 
 #char10{
-	background: url(../img/wmozo_scenario_10.png) no-repeat;
+	background: url(../img/wmzt_scenario_10.png) no-repeat;
 }
 
 #char11{
-	background: url(../img/wmozo_scenario_11.png) no-repeat;
+	background: url(../img/wmzt_scenario_11.png) no-repeat;
 	position:static!important; margin:230px auto 0 auto;
+}
+
+
+
+#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
+
+	color: #f06566;
+	font-size: 13pt;
+	font-weight: 900;
+	padding: 22px 85px;
+	text-align: center;
+}
+
+#char11{
+
+	padding: 12px 70px;
+}
+
+
+#char2,#char3, #char6{
+	padding-top:302px;
 }
 
 #ideal{
 	height: 640px;
 	width:  608px;
-	background: url(../img/wmozo_scenario_12.png) no-repeat;
+	background: url(../img/wmzt_scenario_12.png) no-repeat;
 	background-size: 90% auto;
 	background-position: top center;
 	margin:60px auto;
 	position: static;
+
+	text-align: center;
+	padding: 110px 185px;
+	font-size: 17pt;
+	color: #f06566;
+	font-weight: 900;
 }
 
 #idealFrame{
@@ -394,7 +424,10 @@ div{
 	left:0;
 	height: 100%;
 	width: 100%;
-	z-index: 1000;
+}
+
+#idealMsg{
+	color:#56aa65;
 }
 
 #SmartMozoFrame{

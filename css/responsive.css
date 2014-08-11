@@ -65,6 +65,7 @@ and (max-device-width : 999px) {
 		line-height: 33px;
 	}
 
+
 	#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
 
 		height: 230px!important;
@@ -82,12 +83,37 @@ and (max-device-width : 999px) {
 		margin-right:-10%;
 	}
 
+
+	#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
+
+		font-size: 9pt;
+		padding: 13px 65px;
+		line-height: 10pt;
+	}
+
+
+	#char11{
+
+		padding: 12px 35px;
+	}
+
+	#char2,#char3, #char6{
+		padding-top:195px ;
+	}
+
+
 	#ideal{
 		height: 310px;
 		width:  300px;
 		margin: 60px auto;
+		padding: 38px 100px;
+		font-size: 9pt;
 	}
 
+
+	#idealMsg{
+		font-size:9pt;
+	}
 
 
 
@@ -174,6 +200,9 @@ and (max-device-width : 999px) {
 		font-size:8pt;
 		line-height: 11pt;
 		padding: 42px 15px 40px 15px;
+	}
+	#HotPotMozoMsg .mozo-msg{
+		padding-top:30px;
 	}
 	#MemberMozoMsg .mozo-msg{
 		height: 230px;
