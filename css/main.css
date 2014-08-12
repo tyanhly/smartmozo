@@ -192,14 +192,14 @@ div{
 	background:url(../img/webmozo_ttile_cloud.png);
 	width: 305px;
 	height: 136px;
-	padding: 45px 45px 10px 20px;
+	padding: 55px 45px 10px 20px;
 }
 
 #titleCloudMsg{
 	color:#e35242;
 	text-decoration: uppercase;
 	text-align: center;
-	line-height: 32px;
+	line-height: 18pt;
 	font-size: 16pt;
 	font-weight: 900;
 	text-indent: 20px;

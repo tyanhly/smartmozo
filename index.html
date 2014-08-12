@@ -454,28 +454,7 @@
 
 
 <script>
-	
-i18n.init(function(t) {
-  // translate nav
-  $("div[data-i18n]").i18n(	{
-  		debug: true,
-  		useCookie: true,
-  		useLocalStorage: true,
-  		localStorageExpirationTime: 1000 //86400000 // in ms, default 1 week
 
-  });
-
-});
-
-if(i18n.lng()==='ch'){
-	$(body).append(
-		'<link rel="stylesheet" href="css/main-ch.css"  type="text/css" /><link rel="stylesheet" href="css/responsive-ch.css"  type="text/css" />'
-	);
-	$("#DemoFrame a:has(#ChinaImg)").css('opacity', '0.8');
-}else{
-
-	$("#DemoFrame a:has(#EnglishImg)").css('opacity', '0.8');
-}
 
 
 </script>

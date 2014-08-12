@@ -1,6 +1,10 @@
+autoScrollDistance = 30;
+autoScrollInterval = 100;
+
+unit = 200;
 
 constants = {};
-unit = 200;
+
 constants.step1      = unit;
 constants.step2      = constants.step1 + unit/2;
 constants.step3      = constants.step2 + unit/2;
@@ -219,7 +223,7 @@ constants.step117      = constants.step116 + unit;
 constants.step118      = constants.step117 + unit;
 constants.step119      = constants.step118 + unit;
 
-
+/*************************************Scroll*************************************/
 
 var s = skrollr.init(
 {
@@ -227,16 +231,37 @@ var s = skrollr.init(
 });
 
 
+/*************************************i18n*************************************/
+	
+i18n.init(function(t) {
+  // translate nav
+  $("div[data-i18n]").i18n(	{
+  		debug: true,
+  		useCookie: true,
+  		useLocalStorage: true,
+  		localStorageExpirationTime: 1000 //86400000 // in ms, default 1 week
 
+  });
+
+});
+
+/*************************************Css for foreign language*************************************/
+if(i18n.lng()==='ch'){
+	$(body).append(
+		'<link rel="stylesheet" href="css/main-ch.css"  type="text/css" /><link rel="stylesheet" href="css/responsive-ch.css"  type="text/css" />'
+	);
+	$("#DemoFrame a:has(#ChinaImg)").css('opacity', '0.8');
+}else{
+
+	$("#DemoFrame a:has(#EnglishImg)").css('opacity', '0.8');
+}
 
 
 
 
 /**********************************auto run********************************/
-autoDistance = 30;
-autoInterval = 100;
-var i;
 
+var i;
 
 $("#scrollPlay").on('click', function(){
 	if($(this).hasClass('pause')){
@@ -245,57 +270,8 @@ $("#scrollPlay").on('click', function(){
 	}else{
 		i = setInterval(function(){		
 			_currentScrollTop = s.getScrollTop();
-			s.setScrollTop(_currentScrollTop+autoDistance, true);
-		},autoInterval);
+			s.setScrollTop(_currentScrollTop+autoScrollDistance, true);
+		},autoScrollInterval);
 		$(this).addClass('pause');
 	}
 });
-
-/**************************scroll*******************************************/
-
-// _isScroll=false;
-// _scrollTop = s.getScrollTop();
-// setInterval(function(){		
-// 	_currentScrollTop = s.getScrollTop();
-
-// 	if(_currentScrollTop !== _scrollTop){
-// 		_isScroll=true;
-// 	}else{
-// 		_isScroll=false;
-// 	}
-
-// 	if(_isScroll){
-// 		$("#scroll").css({"opacity":"0"});
-// 	}else{
-
-// 		$("#scroll").css({"opacity":"1" });
-// 	}
-
-// 	_scrollTop = _currentScrollTop;
-// 	// alert(_currentScrollTop);
-// },900);
-
-/**************************************mouse auto*************************/
-// var _isAutoRun = true;
-// $(document).on('click taphold',function(e){
-
-// 	if(_isAutoRun){
-// 		i = setInterval(function(){		
-// 			_currentScrollTop = s.getScrollTop();
-// 			s.setScrollTop(_currentScrollTop+autoDistance, true);
-
-			
-// 		},autoInterval);
-// 		_isAutoRun=false;
-
-// 		$('html').addClass('pause');
-
-// 	}else{
-// 		clearInterval(i);
-
-// 		_isAutoRun=true;
-
-// 		$('html').removeClass('pause');
-// 	}
-
-// });

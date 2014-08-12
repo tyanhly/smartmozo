@@ -1,5 +1,5 @@
 @media only screen 
-and (min-device-width : 320px) 
+and (min-device-width : 641px) 
 and (max-device-width : 999px) {
 
 	#scroll{
@@ -32,7 +32,7 @@ and (max-device-width : 999px) {
 	}
 	#mallProblemMsg{
 
-		font-size: 12pt;
+		font-size: 9pt;
 	}
 
 	#stairsImg{
@@ -321,3 +321,11 @@ and (min-device-height : 1100px)  {
 	}
 }
 /*//f06566*/
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 640px) {
+
+
+}
