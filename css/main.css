@@ -66,7 +66,16 @@ div{
 	position: absolute;
 	background:#81D2EC;
 	z-index: 999999999999;
+	padding:100px;
+	
+	height: 100%;
+	width: 100%;
+	text-align: center;
 
+}
+
+#loading{
+	width: 32px;
 }
 #screen2{
 	background: #fff;
