@@ -30,18 +30,35 @@
 	
 	<div id="DemoFrame">
 
-		<a href="javascript:window.location.href='?setLng=ch'" >
-			<img id="ChinaImg" src="img/wmz_language_CN.png" />
-		</a><br />
-		<a href="javascript:window.location.href='?setLng=en-US'">
-			<img id="EnglishImg" src="img/wmz_language_EN.png" />
-		</a><br />
+		
 		<a href="http://big-labs.com:8135/ssm-web" target="_blank" >
 			<img id="DemoImg" src="img/wmz_viewdemo.png" />
 		</a>
 	</div>
+	<ul class="nav nav-pills" id="langSelection" data-_step145="top:0"data-_step15=" top:-100%">
+	  <li class="dropdown">
+	    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+	      <span id="lang">En</span> <span class="caret"></span>
+	    </a>
+	    <ul class="dropdown-menu" role="menu">
+	    	<li>
+				<a href="javascript:window.location.href='?setLng=en-US'">
+	      			En
+	    		</a>
+	    	</li>
+	    	<li>
+				<a href="javascript:window.location.href='?setLng=ch'">
+	      			Ch
+	    		</a>
+	    	</li>
+	    </ul>
+	  </li>
+	</ul>
+
+
 	<div id="body">
 		<div id="screen1" data-_step1="top:40%;"  data-_step2="top:20%;" data-_step3="top:2%;" data-_step14 data-_step145 data-_step15=" top:-100%" >
+			
 			<div id="smartMozoLogo"   >
 				<div id="smartMozoImg"></div>
 				
@@ -91,7 +108,7 @@
 		<div id="screen2" data-_step1="top:100%"  data-_step145="top:100%;" data-_step15="opacity:1; top:0;">
 			<div id="stairsImg" data-_step16="height:0%;" data-_step17="height:60%;" data-_step19="height:100%; opacity:1; top:0%;" data-_step20="opacity:0; top:-100%;"
 			></div>
-			<div id="car" data-_step16="opacity:0; top:1%;" data-_step17="opacity:1;top:20%;"data-_step19="top:60%;" data-_step20="opacity:0; top:-100%;"></div>
+			<div id="car" data-_step16="opacity:0; top:1%;" data-_step17="opacity:1;top:20%;"data-_step19="top:60%;"  data-_step20="opacity:0; top:-100%;"></div>
 
 			<div id="leftTrees"  data-_step16="opacity:1;"  data-_step17="height:0; top:40%;" data-_step18="height:100%;" data-_step19="top:10%;" data-_step20="opacity:0; top:-100%;"></div>
 
@@ -100,9 +117,9 @@
 
 		<div style="clear:both;" ></div>
 
-		<div id="screen3" data-_step19="top:100%" data-_step20=" top:0%; " data-_step21="top:0%;" data-_step22=" top:-100%;" >
+		<div id="screen3" data-_step19="top:100%" data-_step20=" top:0%; " data-_step211="top:0%;" data-_step22=" top:-100%;" >
 
-			<div id="car2"  data-_step20="top:10%; transform:scale(1);" data-_step21="transform: scale(3);  top:70%; "  ></div>
+			<div id="car2"  data-_step20="top:10%; transform:scale(1);" data-_step21="transform: scale(3);  top:70%; "data-_step211="transform: scale(2.9);  top:68%; " data-_step212></div>
 			<div style="clear:both;" ></div>
 			<div id="doors">
 				<div id="doorLeft">
@@ -121,7 +138,7 @@
 		</div>
 
 		<div style="clear:both;" ></div>
-		<div id="screen4" data-_step21="top:100%;"  data-_step22="top:0%;" data-_step224="top:0%;" data-_step225 data-_step23="top:-100%" >
+		<div id="screen4" data-_step211="top:100%;"  data-_step22="top:0%;" data-_step224="top:0%;" data-_step225 data-_step23="top:-100%" >
 
 		    <div id="mallInside" data-_step222="background-position-y: 0%;" data-_step223="background-position-y: 100%;">
 				<div id="bigger"  data-_step221="transform:scale(0);"
@@ -139,7 +156,7 @@
 
 		<div style="clear:both;" ></div>
 		<div id="screen5" data-_step224="top:100%;"  data-_step23="top:0%;"   data-_step53="top:0%;" data-_step54="top:-100%;">
-			<div  id="UserProfile" >
+			<div  id="UserProfile" data-_step512="opacity:1;" data-_step513="opacity:0;" >
 				<div id="Progress1" data-_step23="width:0%;" data-_step25="width: 100%;"></div>
 				<div id="Progress2" data-i18n="SHOPPER_PROFILLING">Shopper Profilling</div>
 			</div>
@@ -149,7 +166,7 @@
 
 			<div class="character" id="char1" 
 			data-_step22="transform:scale(0);"  
-			data-_step23=" top:50%;left:20%;transform:scale(0.5);"  
+			data-_step23=" top:50%;left:30%;transform:scale(0.5);"  
 			data-_step25="top:30%;transform:scale(1);"  
 			data-_step251 
 			data-_step26="top:20%;" 
@@ -157,15 +174,15 @@
 			data-_step48 
 			data-_step49=" top: 0; left:0%; margin-top:10px; opacity:1;" 
 			data-_step491="opacity:0.4;"
-			data-_step52="opacity:0;" data-i18n="GRATIFICATION_SEEKING"></div>
+			data-_step52="opacity:0;" data-i18n="[html]GRATIFICATION_SEEKING"></div>
 <!-- 
 	
 	
-			<div style="border:1px solid; width:60%;" data-_step23=" top:50%;left:20%;height:0;"  data-_step25="top:30%;height:20%;" data-_step26="top:20%;height:50%" data-_step27="top:-100%;height:130%;" data-_step28="top:-100%;height:180%;"
+			<div style="border:1px solid; width:60%;" data-_step23=" top:50%;left:30%;height:0;"  data-_step25="top:30%;height:20%;" data-_step26="top:20%;height:50%" data-_step27="top:-100%;height:130%;" data-_step28="top:-100%;height:180%;"
 			data-_step29="top:-150%;"></div> -->
 
 			<div class="character" id="char2" 
-			    data-_step26=" top:50%;right:20%;transform:scale(0);"  
+			    data-_step26=" top:50%;right:30%;transform:scale(0);"  
 				data-_step27="top:30%;transform:scale(1);" 
 				data-_step271
 				data-_step28="top:-20%;"
@@ -173,10 +190,10 @@
 				data-_step49 
 				data-_step491=" top:40%; right:0%;margin-top:10px; opacity:1;"
 				data-_step492="opacity:0.4;"
-				 data-_step52="opacity:0;" data-i18n="SOCIAL_SHOPPING"></div>
+				 data-_step52="opacity:0;" data-i18n="[html]SOCIAL_SHOPPING"></div>
 
 			<div class="character" id="char3" 
-				data-_step28=" top:50%;left:20%;transform:scale(0);"  
+				data-_step28=" top:50%;left:30%;transform:scale(0);"  
 				data-_step29="top:30%;transform:scale(1);" 
 				data-_step291
 				data-_step30="top:20%;" 
@@ -184,60 +201,60 @@
 				data-_step491  
 				data-_step492="  top:40%; left:0%;margin-top:10px; opacity:1;"
 				 data-_step493="opacity:0.4;"
-				 data-_step52="opacity:0;" data-i18n="HIGH_QUATITY"></div>
+				 data-_step52="opacity:0;" data-i18n="[html]HIGH_QUALITY"></div>
 
 			<div class="character" id="char4" 
-			data-_step30=" top:50%;right:20%;transform:scale(0);"
+			data-_step30=" top:50%;right:30%;transform:scale(0);"
 			 data-_step31="top:30%;transform:scale(1);" 
 			 data-_step311
 			 data-_step32="top:-20%;"data-_step33="top:-100%;" 
 			 data-_step492 
 			data-_step493="top:0; right:0%;margin-top:10px; opacity:1;" 
 			data-_step494="opacity:0.4;"
-				data-_step52="opacity:0;" data-i18n="CONFUSED_BY_CHOISE"></div>
+				data-_step52="opacity:0;" data-i18n="[html]CONFUSED_BY_CHOISE"></div>
 
 
 
-			<div class="character" id="char5" data-_step32=" top:50%;left:20%;transform:scale(0);"  data-_step33="top:30%;transform:scale(1);"  data-_step331 data-_step34="top:20%;" data-_step35="top:-100%;"  
+			<div class="character" id="char5" data-_step32=" top:50%;left:30%;transform:scale(0);"  data-_step33="top:30%;transform:scale(1);"  data-_step331 data-_step34="top:20%;" data-_step35="top:-100%;"  
 			data-_step493="top:-100%; "
 			data-_step50="  top:10%; left:10%; opacity:1;" 
 			data-_step501="opacity:0.4;"
-				 data-_step52="opacity:0;" data-i18n="VALUE_SEEKING"></div>
+				 data-_step52="opacity:0;" data-i18n="[html]VALUE_SEEKING"></div>
 
-			<div class="character" id="char6" data-_step34=" top:50%;right:20%;transform:scale(0);" data-_step35="top:30%;transform:scale(1);" data-_step351 data-_step36="top:-20%;"data-_step37="top:-100%;" 
+			<div class="character" id="char6" data-_step34=" top:50%;right:30%;transform:scale(0);" data-_step35="top:30%;transform:scale(1);" data-_step351 data-_step36="top:-20%;"data-_step37="top:-100%;" 
 			data-_step50="top:-100%; " 
 			data-_step501="  top:30%;  right:30%; opacity:1;" 
 			data-_step502="opacity:0.4;"
 				 
-			data-_step52="opacity:0;" data-i18n="BRAND_LOYALTY"></div>
+			data-_step52="opacity:0;" data-i18n="[html]BRAND_LOYALTY"></div>
 
-			<div class="character" id="char7" data-_step36=" top:50%;left:20%;transform:scale(0);"  data-_step37="top:30%;transform:scale(1);"  data-_step371 data-_step38="top:20%;" data-_step39="top:-100%;" 
+			<div class="character" id="char7" data-_step36=" top:50%;left:30%;transform:scale(0);"  data-_step37="top:30%;transform:scale(1);"  data-_step371 data-_step38="top:20%;" data-_step39="top:-100%;" 
 			data-_step501="top:-100%; " 
 			data-_step502="  top:10%; left:30%; opacity:1;"
 			data-_step503="opacity:0.4;"
 				 
-			data-_step52="opacity:0;" data-i18n="BRAND_CONSCIOUS"></div>
+			data-_step52="opacity:0;" data-i18n="[html]BRAND_CONSCIOUS"></div>
 
-			<div class="character" id="char8" data-_step38=" top:50%;right:20%;transform:scale(0);" data-_step39="top:30%;transform:scale(1);" data-_step391 data-_step40="top:-20%;"data-_step41="top:-100%;" 
+			<div class="character" id="char8" data-_step38=" top:50%;right:30%;transform:scale(0);" data-_step39="top:30%;transform:scale(1);" data-_step391 data-_step40="top:-20%;"data-_step41="top:-100%;" 
 			data-_step502="top:-100%; " 
 			data-_step503="  top:30%; right:10%; opacity:1;" 
 			data-_step51="opacity:0.4;"
-			data-_step52="opacity:0;" data-i18n="UTILITARIAN_SHOPPING"></div>
+			data-_step52="opacity:0;" data-i18n="[html]UTILITARIAN_SHOPPING"></div>
 
 
 
-			<div class="character" id="char9" data-_step40=" top:50%;left:20%;transform:scale(0);"  data-_step41="top:30%;transform:scale(1);"  data-_step411 data-_step42="top:20%;" data-_step43="top:-100%;" 
+			<div class="character" id="char9" data-_step40=" top:50%;left:30%;transform:scale(0);"  data-_step41="top:30%;transform:scale(1);"  data-_step411 data-_step42="top:20%;" data-_step43="top:-100%;" 
 			data-_step503="top:-100%; " 
 
 			data-_step51="  top:20%; left:10%; opacity:1;" 
 			data-_step511="opacity:0.4;"
-			data-_step52="opacity:0;" data-i18n="HEDONIC_SHOPPING"></div>
+			data-_step52="opacity:0;" data-i18n="[html]HEDONIC_SHOPPING"></div>
 
-			<div  class="character" id="char10" data-_step42=" top:50%;right:20%;transform:scale(0);" data-_step43="top:30%;transform:scale(1);" data-_step431 data-_step44="top:-20%;"data-_step45="top:-100%;" 
+			<div  class="character" id="char10" data-_step42=" top:50%;right:30%;transform:scale(0);" data-_step43="top:30%;transform:scale(1);" data-_step431 data-_step44="top:-20%;"data-_step45="top:-100%;" 
 			data-_step51="top:-100%; " 
 			data-_step511="  top:20%; right:10%; opacity:1;" 
 			data-_step512="   opacity:0.4;"
-			data-_step52="opacity:0;" data-i18n="ROLE_PLAYING"></div>
+			data-_step52="opacity:0;" data-i18n="[html]ROLE_PLAYING"></div>
 
 			<div id="char11"
 			 data-_step44=" transform:scale(0);"  
@@ -246,11 +263,11 @@
 			 data-_step452="opacity:0.4"
 			 
 			 data-_step512="   opacity:0; position:static;margin:230px auto 0 auto;" 
-			  data-i18n="ANONYMOUS_PLEASURE_SEEKING"></div>
+			  data-i18n="[html]ANONYMOUS_PLEASURE_SEEKING"></div>
 
 			<div id="idealFrame">
 				<div id="ideal" data-_step513="transform:scale(0);" 
-				data-_step52="transform:scale(1);"  >
+				data-_step52="transform:scale(1);"  data-_step521 >
 				<div id="idealMsg">SMARTMOZO</div>
 				<div data-i18n="[html]IS_YOUR_SOLUTION__FOR_A_BETTER_SHOPPING_EXPERIENCE"></div>
 			</div>
@@ -260,7 +277,7 @@
 
 		<div style="clear:both;" ></div>
 
-		<div id="screen6" data-_step514="top:-100%;" data-_step52="top:0%;" data-_step53="top:0%;" data-_step561 data-_step57="top:0%;" data-_step58="top:-100%;"  >
+		<div id="screen6" data-_step521="top:-100%;" data-_step53="top:0%;" data-_step57="top:0%;" data-_step58="top:-100%;"  >
 
 			<div id="SmartMozoFrame" 
 
@@ -271,7 +288,7 @@
 			data-_step544="transform:translateY(0px);"
 			data-_step545=" transform:translateY(-20px);" 
 			data-_step546="transform:translateY(0px);">
-				<div id="SmartMozo" data-_step51="opacity:0;" data-_step52="opacity:1;bottom:50%;" data-_step53="bottom:0;" >
+				<div id="SmartMozo" data-_step52="opacity:0;" data-_step521="opacity:1;bottom:50%;" data-_step53="bottom:0;" >
 
 					<div id="MozoMsg" data-_step55="transform:scale(0);" data-_step56="transform:scale(1);">
 
@@ -454,28 +471,7 @@
 
 
 <script>
-	
-i18n.init(function(t) {
-  // translate nav
-  $("div[data-i18n]").i18n(	{
-  		debug: true,
-  		useCookie: true,
-  		useLocalStorage: true,
-  		localStorageExpirationTime: 1000 //86400000 // in ms, default 1 week
 
-  });
-
-});
-
-if(i18n.lng()==='ch'){
-	$(body).append(
-		'<link rel="stylesheet" href="css/main-ch.css"  type="text/css" /><link rel="stylesheet" href="css/responsive-ch.css"  type="text/css" />'
-	);
-	$("#DemoFrame a:has(#ChinaImg)").css('opacity', '0.8');
-}else{
-
-	$("#DemoFrame a:has(#EnglishImg)").css('opacity', '0.8');
-}
 
 
 </script>

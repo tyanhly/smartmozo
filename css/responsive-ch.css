@@ -1,97 +1,97 @@
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 999px) {
+and (max-device-width : 480px)  {
+
+	#titleCloudMsg{
+		font-size: 17px;
+		line-height: 19px;
+	}
 
 	#titleCloud{
-		padding: 30px 30px 10px 20px;
+		padding: 25px 0px 10px 0px;
 	}
 
-	#titleCloudMsg {
-		
-		line-height: 22pt;
-		font-size: 18pt;
-	}
 	#mallProblemMsg{
 
-		font-size: 18pt;
-	}
-
-	#bigger{
-		line-height: 30pt;
+		font-size: 20px;
 	}
 
 
 	#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
 
-		font-size: 13pt;
-		padding: 15px;
+		color: #f06566;
+		font-size: 16px;
+		font-weight: 900;
+		padding: 22px;
+		text-align: center;
 	}
 
 
 	#char2,#char3, #char6{
-		padding-top:195px;
+		padding-top:198px ;
 	}
-
-
 	#ideal{
-		padding: 45px 100px;
-		font-size: 13pt;
+		padding: 47px 80px;
+		font-size: 20px;
+		line-height: 22px;
 	}
-
 
 	#idealMsg{
-		font-size:10pt;
+		font-size: 13px;
+		line-height: 15px;
 	}
 
 	#MozoMsg .mozo-msg{
-		line-height: 35pt;
-		font-size: 29pt;
-		padding:4px 20px;
+		line-height: 27px;
+		font-size: 25px;
+		padding:20px 20px 0px 20px;
 	}
+
+
+	.mozo-header{
+		line-height: 22px;
+		font-size: 20px;
+	}
+
 
 	#AvailableMozoMsg .mozo-msg{
-		padding: 5px 18px;
-		font-size:10pt;
-		line-height: 12pt;
+		padding: 22px 20px;
+		font-size: 13px;
+		line-height: 15px;
 	}
 
-
-	#MemberMozoMsg .mozo-msg, #CouponMozoMsg .mozo-msg, #HotPotMozoMsg .mozo-msg, #PromotionMozoMsg .mozo-msg{
-		padding: 26px 15px 25px 15px;
+	#DirectionMozoMsg .mozo-msg, #MemberMozoMsg .mozo-msg, #CouponMozoMsg .mozo-msg, #HotPotMozoMsg .mozo-msg, #PromotionMozoMsg .mozo-msg{
+		padding: 15px 18px 10px 18px;
 	}
 
 	#DirectionMozoMsg .mozo-msg, #MemberMozoMsg .mozo-msg,#ChatMozoMsg .mozo-msg, #CouponMozoMsg .mozo-msg, #HotPotMozoMsg .mozo-msg, #PromotionMozoMsg .mozo-msg{
-		font-size: 10pt;
-		line-height: 12pt;
+		font-size: 13px;
+		line-height: 15px;
 	}
-	#DirectionMozoMsg .mozo-msg{
-		padding: 18px 22px 0px 22px;
+}
+
+
+@media only screen 
+and (device-width : 360px) {
+
+	#smartMozoImg, #flyCloudImg, #titleCloud, #imgMall{
+		background-size: 80% ;
+		background-position: center top;
+		background-repeat: no-repeat;
 	}
-	#PromotionMozoMsg .mozo-msg,  #MemberMozoMsg .mozo-msg, #CouponMozoMsg .mozo-msg {
-		font-size: 12pt;
-		line-height: 14pt;
+	
+	#titleCloudMsg{
+		font-size: 22px;
+		line-height: 24px;
 	}
 
-/* Styles */
-}
+	#titleCloud{
+		padding: 30px 0px 10px 0px;
+	}
 
-@media only screen 
-and (min-device-height : 700px)  {
-	
-	
-}
-@media only screen 
-and (min-device-height : 900px)  {
-	
-}
+	#mallProblemMsg{
 
-@media only screen 
-and (min-device-height : 1000px)  {
-	
-}
+		font-size: 26px;
+	}
 
-@media only screen 
-and (min-device-height : 1100px)  {
-	
+
 }
-/*//f06566*/

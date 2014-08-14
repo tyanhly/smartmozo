@@ -1,7 +1,7 @@
 
 
 #titleCloud{
-	padding: 33px 45px 10px 20px;
+	padding: 33px 20px 10px 20px;
 }
 
 #titleCloudMsg {
@@ -39,6 +39,7 @@
 	font-size: 27pt;
 	color: #f06566;
 	font-weight: 900;
+	line-height: 29pt;
 }
 
 #idealMsg{
@@ -46,21 +47,18 @@
 }
 
 #AvailableMozoMsg .mozo-msg{
-	padding: 13px 27px;
+	padding: 23px 27px;
 	font-size: 12pt;
 	line-height: 13pt;
 }
 
 #DirectionMozoMsg .mozo-msg, #MemberMozoMsg .mozo-msg, #CouponMozoMsg .mozo-msg, #HotPotMozoMsg .mozo-msg, #PromotionMozoMsg .mozo-msg{
-	padding: 42px 20px 40px 20px;
+	padding: 30px 20px 40px 20px;
 }
 
 #DirectionMozoMsg .mozo-msg, #MemberMozoMsg .mozo-msg,#ChatMozoMsg .mozo-msg, #CouponMozoMsg .mozo-msg, #HotPotMozoMsg .mozo-msg, #PromotionMozoMsg .mozo-msg{
 	font-size: 12pt;
 	line-height: 14pt;
-}
-#DirectionMozoMsg .mozo-msg{
-	padding: 30px 27px 40px 27px;
 }
 #PromotionMozoMsg .mozo-msg,  #MemberMozoMsg .mozo-msg, #CouponMozoMsg .mozo-msg {
 	font-size: 14pt;
