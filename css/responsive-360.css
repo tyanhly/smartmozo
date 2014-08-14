@@ -104,7 +104,7 @@ and (max-device-width : 480px)  {
 	#char11{
 
 		padding: 12px 35px;
-		margin-top: 100px;
+		margin-top: 100px!important;
 	}
 
 	#char2,#char3, #char6{
@@ -150,8 +150,8 @@ and (max-device-width : 480px)  {
 
 
 	.mozo-header{
-		line-height: 20px;
-		font-size: 16px;
+		line-height: 16px;
+		font-size: 14px;
 		padding:10px 55px 10px 10px;
 	}
 
@@ -257,14 +257,14 @@ and (max-device-width : 480px)  {
 
 	#ChatIphone{	
 		left: 100px;
-		height: 450px;
-		top:-940px;
+		height: 400px;
+		top:-900px;
 	}
 
 
 	#ChatMozoMsg{	
 		right: -45px;
-		top:-1260px;
+		top:-1220px;
 
 		width: 140px;
 		height: 180px;

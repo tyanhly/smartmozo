@@ -262,7 +262,7 @@ if(i18n.lng()==='ch'){
 }else{
 
 	$("#DemoFrame a:has(#EnglishImg)").css('opacity', '0.8');
-	$("#lang").html("En");
+	$("#lang").html("EN");
 }
 
 
@@ -292,3 +292,8 @@ $("#scrollPlay").on('click', function(){
 		$(this).addClass('pause');
 	}
 });
+
+/*************************************Document ready*************************************/
+$(function(){
+	$("#screen0").hide();
+})

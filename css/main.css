@@ -54,11 +54,18 @@ div{
 	margin: 0 auto;
 }
 
-#screen1, #screen2, #screen3, #screen4, #screen5, 
+#screen0, #screen1, #screen2, #screen3, #screen4, #screen5, 
 #screen6, #screen7, #screen8, #screen9, #screen10,
 #screen11, #screen12, #screen13, #screen14, #screen15{
 	width:100%;
 	height:100%;
+
+
+}
+#screen0{
+	position: absolute;
+	background:#81D2EC;
+	z-index: 999999999999;
 
 }
 #screen2{
@@ -66,7 +73,7 @@ div{
 }
 
 #screen3{
-	background: #A5B390 url(../img/wmz_road_per_spective.png) no-repeat;
+	background: #e6f8cc url(../img/wmz_road_per_spective.png) no-repeat;
 	background-position: center top;
 	background-size: auto 90%;
 
