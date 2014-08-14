@@ -1,3 +1,7 @@
+// alert("rerer"+ screen.height+"dfdf"+
+// screen.width);
+
+
 autoScrollDistance = 30;
 autoScrollInterval = 100;
 
@@ -35,7 +39,10 @@ constants.step20      = constants.step19 + unit;
 constants.step201     = constants.step20 + unit;
 constants.step21      = constants.step201 +  unit;
 
-constants.step22      = constants.step21 + unit;
+constants.step211      = constants.step21 + unit;
+constants.step212      = constants.step211 + unit;
+
+constants.step22      = constants.step212 + unit;
 constants.step221      = constants.step22 + unit;
 constants.step2211      = constants.step221 + unit;
 constants.step2212      = constants.step2211 + unit;
@@ -55,75 +62,75 @@ constants.step23      = constants.step225 + unit;
 constants.step24      = constants.step23 + unit;
 constants.step25      = constants.step24 + unit;
 
-constants.step251      = constants.step25 + 3/2*unit;
+constants.step251      = constants.step25 + 4/2*unit;
 
 constants.step26      = constants.step251 + unit;
 constants.step27      = constants.step26 + unit;
-constants.step271      = constants.step27 + 3/2*unit;
+constants.step271      = constants.step27 + 4/2*unit;
 constants.step28      = constants.step271 + unit;
 constants.step29      = constants.step28 + unit;
-constants.step291      = constants.step29 + 3/2*unit;
+constants.step291      = constants.step29 + 4/2*unit;
 
 
 
 constants.step30      = constants.step291 + unit;
 constants.step31      = constants.step30 + unit;
-constants.step311      = constants.step31 + 3/2*unit;
+constants.step311      = constants.step31 + 4/2*unit;
 
 constants.step32      = constants.step311 + unit;
 constants.step33      = constants.step32 + unit;
-constants.step331      = constants.step33 + 3/2*unit;
+constants.step331      = constants.step33 + 4/2*unit;
 
 constants.step34      = constants.step331 + unit;
 constants.step35      = constants.step34 + unit;
-constants.step351      = constants.step35 + 3/2*unit;
+constants.step351      = constants.step35 + 4/2*unit;
 
 constants.step36      = constants.step351 + unit;
 constants.step37      = constants.step36 + unit;
-constants.step371      = constants.step37 + 3/2*unit;
+constants.step371      = constants.step37 + 4/2*unit;
 
 constants.step38      = constants.step371 + unit;
 constants.step39      = constants.step38 + unit;
-constants.step391      = constants.step39 + 3/2*unit;
+constants.step391      = constants.step39 + 4/2*unit;
 
 
 
 constants.step40      = constants.step391 + unit;
 constants.step41      = constants.step40 + unit;
-constants.step411      = constants.step41 + 3/2*unit;
+constants.step411      = constants.step41 + 4/2*unit;
 
 constants.step42      = constants.step411 + unit;
 constants.step43      = constants.step42 + unit;
-constants.step431      = constants.step43 + 3/2*unit;
+constants.step431      = constants.step43 + 4/2*unit;
 
 constants.step44      = constants.step431 + unit;
 constants.step45      = constants.step44 + unit;
 constants.step451      = constants.step45 + unit;
-constants.step452      = constants.step451 + unit;
+constants.step452      = constants.step451 + unit/2;
 
-constants.step46      = constants.step452 + unit;
-constants.step47      = constants.step46 + unit;
+constants.step47      = constants.step452 + unit/2;
 
-constants.step48      = constants.step47 + unit;
-constants.step49      = constants.step48 + unit;
-constants.step491      = constants.step49 + unit/3;
-constants.step492      = constants.step491 + unit/3;
-constants.step493      = constants.step492 + unit/3;
-constants.step494      = constants.step493 + unit/3;
+constants.step48      = constants.step47 + unit/2;
+constants.step49      = constants.step48 + unit/2;
+constants.step491      = constants.step49 + unit/2;
+constants.step492      = constants.step491 + unit/2;
+constants.step493      = constants.step492 + unit/2;
+constants.step494      = constants.step493 + unit/2;
 
-constants.step50      = constants.step494 + unit/3;
-constants.step501      = constants.step50 + unit/3;
-constants.step502     = constants.step501 + unit/3;
-constants.step503      = constants.step502 + unit/3;
+constants.step50      = constants.step494 + unit/2;
+constants.step501      = constants.step50 + unit/2;
+constants.step502     = constants.step501 + unit/2;
+constants.step503      = constants.step502 + unit/2;
 
-constants.step51      = constants.step503 + unit/3;
-constants.step511      = constants.step51 + unit/3;
-constants.step512      = constants.step511 + unit/3;
-constants.step513      = constants.step512 + unit/3;
-constants.step514      = constants.step513 + unit/3;
+constants.step51      = constants.step503 + unit/2;
+constants.step511      = constants.step51 + unit/2;
+constants.step512      = constants.step511 + unit/2;
+constants.step513      = constants.step512 + unit/2;
+constants.step514      = constants.step513 + unit/2;
 
 constants.step52      = constants.step513 + 2*unit;
-constants.step53      = constants.step52 + 3*unit;
+constants.step521      = constants.step52 + 2*unit;
+constants.step53      = constants.step521 + 3*unit;
 
 constants.step54      = constants.step53 + unit;
 
@@ -251,9 +258,11 @@ if(i18n.lng()==='ch'){
 		'<link rel="stylesheet" href="css/main-ch.css"  type="text/css" /><link rel="stylesheet" href="css/responsive-ch.css"  type="text/css" />'
 	);
 	$("#DemoFrame a:has(#ChinaImg)").css('opacity', '0.8');
+	$("#lang").html("CH");
 }else{
 
 	$("#DemoFrame a:has(#EnglishImg)").css('opacity', '0.8');
+	$("#lang").html("En");
 }
 
 
@@ -267,10 +276,18 @@ $("#scrollPlay").on('click', function(){
 	if($(this).hasClass('pause')){
 		clearInterval(i);
 		$(this).removeClass('pause');
+
 	}else{
+		if(s.getScrollTop()>=s.getMaxScrollTop()){
+			s.setScrollTop(0);
+		}
 		i = setInterval(function(){		
 			_currentScrollTop = s.getScrollTop();
 			s.setScrollTop(_currentScrollTop+autoScrollDistance, true);
+			if(s.getScrollTop()>=s.getMaxScrollTop()){
+				$("#scrollPlay").removeClass('pause');
+				clearInterval(i);
+			}
 		},autoScrollInterval);
 		$(this).addClass('pause');
 	}

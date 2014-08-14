@@ -1,0 +1,365 @@
+@media only screen 
+and (max-device-width : 480px)  {
+
+
+	#scroll{
+
+		background:url(../img/arrow_up.png) no-repeat;
+	}
+	#smartMozoImg, #flyCloudImg, #titleCloud, #imgMall{
+		background-size: 60% ;
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
+
+	#titleCloud{
+		margin-top:0px;
+		padding: 30px 5px 10px 5px;
+	}
+
+
+	#flyCloudImg{
+		margin: 0px auto 0 auto;
+	}
+
+	#imgMall{
+		width: 160%;
+		height: auto;
+		margin-left:-30%;
+	}
+
+	#titleCloudMsg{
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	#mallProblemMsg{
+
+		font-size: 15px;
+	}
+
+	#stairsImg{
+		background-size: 50%;
+	}
+
+
+	#leftTrees{	
+		position: absolute;
+		background-size: 30%;
+
+		background-position: top left;
+		left:5%;
+	}
+	#rightTrees{	
+		position: absolute;
+		background-size: 30%;
+
+		background-position: top right;
+		right:5%;
+	}
+
+	#car2{
+
+		background-size: 60px;
+		background-position: top center;
+	}
+
+	#mallInside{
+		background-size: auto 100% ;
+	}
+
+	#bigger{
+		margin: 200px auto;
+		font-size:15px;
+		line-height: 37px;
+	}
+
+
+	#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
+
+		height: 230px!important;
+		width:  230px!important;
+	}
+
+	#char1,#char3, #char5,  #char7,  #char9, #char11{
+
+		margin-left:-10%;
+	}
+
+
+	 #char2, #char4, #char6, #char8, #char10{
+
+		margin-right:-10%;
+	}
+
+
+	#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
+
+		font-size: 11px;
+		padding: 13px 60px;
+		line-height: 12px;
+	}
+
+
+	#char11{
+
+		padding: 12px 35px;
+		margin-top: 100px;
+	}
+
+	#char2,#char3, #char6{
+		padding-top:195px ;
+	}
+
+
+	#ideal{
+		height: 310px;
+		width:  300px;
+		margin: 60px auto;
+		padding: 47px 100px;
+		line-height: 13px;
+		font-size: 11px;
+	}
+
+
+	#idealMsg{
+		font-size:13px;
+	}
+
+
+
+	#SmartMozo{
+		height: 200px;
+		margin-bottom: 5%;
+	}
+
+	#MozoMsg{	
+		right: -40px;
+		top:-160px;
+		width: 180px;
+	}
+
+	#MozoMsg .mozo-msg{
+		height: 170px;
+		width: 170px;	
+		line-height: 19px;
+		font-size: 17px;
+		bottom: 10px;
+		padding:40px 20px 0px 20px;
+	}
+
+
+	.mozo-header{
+		line-height: 20px;
+		font-size: 16px;
+		padding:10px 55px 10px 10px;
+	}
+
+	#AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo, 
+	#ChatSmartMozo{
+		height: 100px;
+		left:90px;
+		bottom: 5%;
+	}
+
+	#MemberSmartMozo{
+		left:60px;
+	}
+
+
+
+	#AvailableIphone, #CouponIphone, #HotPotIphone, #PromotionIphone, #DirectionIphone{	
+		height: 500px;
+	}
+
+	#AvailableIphone{	
+		left: -100px;
+		top:-780px;
+	}
+
+	#AvailableAndroid{	
+		height: 450px;
+		right: 80px;
+		top:-280px;
+	}
+
+	#AvailableMozoMsg{	
+
+		right: -10px;
+		top:-1110px;
+		height: 150%;
+	}
+
+	#AvailableMozoMsg .mozo-msg{
+		height: 120px;
+		width: 120px;
+		padding: 1px 25px;
+		font-size:10px;
+		line-height: 11px;
+	}
+
+
+	#DirectionMozoMsg, #CouponMozoMsg, #HotPotMozoMsg, #PromotionMozoMsg, #MemberMozoMsg{	
+
+		right: 0px;
+		top:-760px;
+		width: 135px;
+		height: 270px;
+	}
+	#MemberMozoMsg{
+
+		top:-620px;
+		right:0px;
+	}
+
+	#DirectionMozoMsg .mozo-msg, #MemberMozoMsg .mozo-msg, 
+	#CouponMozoMsg .mozo-msg, #HotPotMozoMsg .mozo-msg, #PromotionMozoMsg .mozo-msg{
+		height: 250px;
+		width: 135px;
+		font-size:9px;
+		line-height: 12px;
+		padding: 30px 18px 40px 18px;
+	}
+	#MemberMozoMsg .mozo-msg{
+		height: 230px;
+		width: 140px;
+		line-height: 10px;
+		padding: 30px 17px 40px 17px;
+	}
+
+
+
+	#CouponIphone, #HotPotIphone, #PromotionIphone, #DirectionIphone{	
+		left: -100px;
+		top:-290px;
+	}
+
+
+	#MemberIphone{	
+
+		left: -60px;
+		top:-290px;
+		background-position: center 0px;
+		background-size: contain;
+		height: 400px;
+	}
+
+
+	#ChatSmartMozo{
+		left:-100px;
+	}
+
+	#ChatAndroid{	
+		top:-400px;
+		right: -100px;
+	}
+
+
+	#ChatIphone{	
+		left: 100px;
+		height: 450px;
+		top:-940px;
+	}
+
+
+	#ChatMozoMsg{	
+		right: -45px;
+		top:-1260px;
+
+		width: 140px;
+		height: 180px;
+	}
+
+
+	#ChatMozoMsg .mozo-msg{
+		height: 180px;
+		width: 140px;
+		font-size:10px;
+		line-height: 13px;
+		padding: 15px 22px;
+	}
+
+
+	#UserProfile{
+		
+		height:30px; 
+		
+	}
+	#Progress2{
+		
+		height:30px; 
+		line-height: 30px;
+		font-size: 13px;
+	}
+
+}
+
+
+@media only screen 
+and (min-device-height : 500px) {
+	
+	 #ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
+		bottom:10%;
+	}
+	#SmartMozo{
+		margin-bottom: 18%;
+	}
+
+
+}
+
+
+@media only screen 
+and (device-width : 360px) {
+
+	#smartMozoImg, #flyCloudImg, #titleCloud, #imgMall{
+		background-size: 80% ;
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
+	
+	#titleCloud{
+		margin-top:0px;
+		padding: 40px 5px 10px 5px;
+	}
+
+	#titleCloudMsg{
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	#mallProblemMsg{
+
+		font-size: 17px;
+	}
+
+}
+
+
+
+
+@media only screen 
+and (device-width : 380px) {
+
+	#smartMozoImg, #flyCloudImg, #titleCloud, #imgMall{
+		background-size: 90% ;
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
+	
+	#titleCloud{
+		margin-top:0px;
+		padding: 43px 5px 10px 5px;
+	}
+
+	#titleCloudMsg{
+		font-size: 17px;
+		line-height: 19px;
+	}
+
+	#mallProblemMsg{
+
+		font-size: 18px;
+	}
+
+}
