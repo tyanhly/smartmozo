@@ -2,40 +2,39 @@
  @import url("responsive-360.css");
 
 
-
 @media only screen 
-and (min-device-height : 641px)  {
+and (min-device-height : 400px)  {
 	
 	#ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
-		bottom:10%;
+		bottom:3%;
 	}
 	#SmartMozo{
-		margin-bottom: 30px;
+		margin-bottom: 2%;
 	}
 }
 @media only screen 
-and (min-device-height : 900px)  {
+and (min-device-height : 600px)  {
 	
 	#ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
-		bottom:SmartMozo%;
+		bottom:6%;
 	}
 	#SmartMozo{
-		margin-bottom: 100px;
+		margin-bottom: 3%;
+	}
+}
+
+@media only screen 
+and (min-device-height : 800px)  {
+	#ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
+		bottom:12%;
+	}
+	#SmartMozo{
+		margin-bottom: 6%;
 	}
 }
 
 @media only screen 
 and (min-device-height : 1000px)  {
-	#ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
-		bottom:15%;
-	}
-	#SmartMozo{
-		margin-bottom: 250px;
-	}
-}
-
-@media only screen 
-and (min-device-height : 1100px)  {
 	#ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
 		bottom:20%;
 	}

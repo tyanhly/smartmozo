@@ -7,13 +7,16 @@
 		
 	"BIGGER"
 		: "BIGGER...",
+
+	"SBIGGER"
+		: "BIGGER...",
 		
 	"SHOPPER_PROFILLING"
 		: "SHOPPER CLASSIFICATION",
 		
 
 	"GRATIFICATION_SEEKING"
-		: "GRATIFICATION SEEKING",
+		: "GRATIFICATION <br />SEEKING",
 		
 	"SOCIAL_SHOPPING"
 		: "SOCIAL <br />SHOPPING",
@@ -49,19 +52,19 @@
 		: "IS YOUR SOLUTION... FOR A BETTER SHOPPING EXPERIENCE",
 		
 	"IM_HERE_YOUR_SHOPPING_BUDDY"
-		: "I'M HERE, YOUR SHOPPING BUDDY",
+		: "I'M HERE, <br />YOUR<br /> SHOPPING <br />BUDDY",
 		
 	"LET_ME_HELP_YOU_SHOP"
 		: "LET ME HELP YOU SHOP",
 		
 	"IM_AVAILABLE_ON"
-		: "<br />I'M AVAILABLE ON",
+		: "<br />I'M <br />AVAILABLE<br /> ON",
 		
 	"NOW_ENJOY_YOUR_SMARTMOZO_SAFARI"
 		: "NOW, ENJOY YOUR \"SMARTMOZO SAFARI\"",
 		
 	"KNOW_WHERE_YOU_ARE_WHATS_NEWS_AND_HOTS_AROUND_YOU_AND_HOW_BEST_TO_GET_THERE" 
-		: "<br />Know where you are<br /><br /><br />What's news <br /> and hots <br />around you<br /><br /><br />And how best <br /> to get there",
+		: "<br />Know where <br />you are<br /><br /><br />What's news <br /> and hots <br />around you<br /><br /><br />And how best <br /> to get there",
 		
 	"ARE_YOU_LOOKING_FOR_HOT_BUYS"
 		: "ARE YOU LOOKING FOR HOT BUYS?",
@@ -79,13 +82,13 @@
 		: "TODAY'S DEAL! GRAB IT NOW!",
 		
 	"CLAIM_YOUR_REWARDS_FOR_BEING__A_SHOPPER_OF_SMARTMOZO"
-		: "<br />CLaim<br /> Your rewards for being<br /><br /><br /><br /><br /><br />A shopper of smartmozo",
+		: "<br />CLaim<br /> Your rewards <br />for being<br /><br /><br /><br /><br /><br />A shopper of smartmozo",
 		
 	"BE_A_MEMBER_SHOP_SMART"
 		: "BE A SMARTMOZO MEMBER",
 		
 	"ENJOY_MORE_AND_MORE_SHOPPING___EXCITEMENTS_SMARTMOZO_BRINGS_TO_YOU"
-		: "<br />Enjoy more <br />and more <br />shopping<br /><br /><br />Excitements smartmozo brings to you",
+		: "<br />Enjoy more <br />and more <br />shopping<br /><br /><br />Excitements smartmozo brings<br /> to you",
 		
 	"LETS_CHAT"
 		: "LET'S CHAT",

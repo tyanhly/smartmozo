@@ -59,7 +59,8 @@ constants.step224      = constants.step223 + unit;
 constants.step225      = constants.step224 + unit;
 
 constants.step23      = constants.step225 + unit;
-constants.step24      = constants.step23 + unit;
+constants.step231      = constants.step23 + unit/2;
+constants.step24      = constants.step231 + unit;
 constants.step25      = constants.step24 + unit;
 
 constants.step251      = constants.step25 + 4/2*unit;
@@ -226,9 +227,9 @@ constants.step114      = constants.step113 + unit;
 constants.step115      = constants.step114 + unit;
 constants.step116      = constants.step115 + unit;
 constants.step1161      = constants.step116 + unit;
-constants.step117      = constants.step116 + unit;
-constants.step118      = constants.step117 + unit;
-constants.step119      = constants.step118 + unit;
+constants.step117      = constants.step1161 + 69;
+// constants.step118      = constants.step117 + unit;
+// constants.step119      = constants.step118 + 100;
 
 /*************************************Scroll*************************************/
 
@@ -258,11 +259,14 @@ if(i18n.lng()==='ch'){
 		'<link rel="stylesheet" href="css/main-ch.css"  type="text/css" /><link rel="stylesheet" href="css/responsive-ch.css"  type="text/css" />'
 	);
 	$("#DemoFrame a:has(#ChinaImg)").css('opacity', '0.8');
-	$("#lang").html("CH");
+	$("#lang").html("Chinese");
+	$("#chLang").hide();
 }else{
 
 	$("#DemoFrame a:has(#EnglishImg)").css('opacity', '0.8');
-	$("#lang").html("EN");
+	$("#lang").html("Enghlish");
+
+	$("#enLang").hide();
 }
 
 
@@ -294,6 +298,112 @@ $("#scrollPlay").on('click', function(){
 });
 
 /*************************************Document ready*************************************/
+
+screen1Top = 0;
+screen2Top = constants.step15;
+screen3Top = constants.step20;
+screen4Top = constants.step22;
+
+screen5Top = constants.step23;
+screen6Top = constants.step53;
+screen7Top = constants.step58;
+screen8Top = constants.step68;
+screen9Top = constants.step76;
+screen10Top = constants.step84;
+screen11Top = constants.step92;
+screen12Top = constants.step100;
+
+screen13Top = constants.step108;
+screen14Top = constants.step117;
+
 $(function(){
 	$("#screen0").hide();
+
+	// $(window).on('mousewheel DOMMouseScroll', function(e) {
+	// 	if(e.originalEvent.wheelDelta /120 > 0) {
+	// 		//Scroll up
+ //            up();
+ //        }
+ //        else{
+ //            down();
+ //        } 
+	// });
+	// $(window).on('swipedown', function(e) {  
+	// 	up();
+	// 	// alert('dfdf');
+	// 	// s.setScrollTop(screen13Top);
+	// });
+	// $(window).on('swipeup', function(e) {  
+	// 	 // down();
+
+	// 	alert('up');
+	// 	$.mobile.silentScroll(11 );
+	// 	// s.setScrollTop(screen2Top);
+	// 	// s.setScrollTop(screen13Top);
+	// });
 })
+/********************function scroll*******************/
+function up(){
+	 st = s.getScrollTop();    
+	if(st >screen1Top && st <=screen2Top){
+		s.setScrollTop(screen1Top);
+    }else if(st >screen2Top && st <=screen3Top){
+    	s.setScrollTop(screen2Top);
+    }else if(st >screen3Top && st <=screen4Top){
+    	s.setScrollTop(screen3Top);
+    }else if(st >screen4Top && st <=screen5Top){
+    	s.setScrollTop(screen4Top);
+    }else if(st >screen5Top && st <=screen6Top){
+    	s.setScrollTop(screen5Top);
+    }else if(st >screen6Top && st <=screen7Top){
+    	s.setScrollTop(screen6Top);
+    }else if(st >screen7Top && st <=screen8Top){
+    	s.setScrollTop(screen7Top);
+    }else if(st >screen8Top && st <=screen9Top){
+    	s.setScrollTop(screen8Top);
+    }else if(st >screen9Top && st <=screen10Top){
+    	s.setScrollTop(screen9Top);
+    }else if(st >screen10Top && st <=screen11Top){
+    	s.setScrollTop(screen10Top);
+    }else if(st >screen11Top && st <=screen12Top){
+    	s.setScrollTop(screen11Top);
+    }else if(st >screen12Top && st <=screen13Top){
+    	s.setScrollTop(screen12Top);
+    }else if(st >screen13Top ){
+    	s.setScrollTop(screen13Top);
+    }
+}
+
+function down(){
+
+	st = s.getScrollTop();    
+	if(st >=screen1Top && st <screen2Top){
+		s.setScrollTop(screen2Top);
+    }else if(st >=screen2Top && st <screen3Top){
+    	s.setScrollTop(screen3Top);
+    }else if(st >=screen3Top && st <screen4Top){
+    	s.setScrollTop(screen4Top);
+    }else if(st >=screen4Top && st <screen5Top){
+    	s.setScrollTop(screen5Top);
+    }else if(st >=screen5Top && st <screen6Top){
+    	s.setScrollTop(screen6Top);
+    }else if(st >=screen6Top && st <screen7Top){
+    	s.setScrollTop(screen7Top);
+    }else if(st >=screen7Top && st <screen8Top){
+    	s.setScrollTop(screen8Top);
+    }else if(st >=screen8Top && st <screen9Top){
+    	s.setScrollTop(screen9Top);
+    }else if(st >=screen9Top && st <screen10Top){
+    	s.setScrollTop(screen10Top);
+    }else if(st >=screen10Top && st <screen11Top){
+    	s.setScrollTop(screen11Top);
+    }else if(st >=screen11Top && st <screen12Top){
+    	s.setScrollTop(screen12Top);
+    }else if(st >=screen12Top && st <screen13Top){
+    	s.setScrollTop(screen13Top);
+    }else if(st >=screen13Top && st <screen14Top){
+    	s.setScrollTop(screen14Top);
+    }else if(st >=screen14Top ){
+    	// s.setScrollTop(screen1Top);
+    }
+}

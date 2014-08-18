@@ -13,13 +13,13 @@ and (max-device-width : 480px)  {
 	}
 
 	#titleCloud{
-		margin-top:0px;
+		margin-top:60px;
 		padding: 30px 5px 10px 5px;
 	}
 
 
 	#flyCloudImg{
-		margin: 0px auto 0 auto;
+		margin: 145px auto 0 auto;
 	}
 
 	#imgMall{
@@ -71,9 +71,17 @@ and (max-device-width : 480px)  {
 	#bigger{
 		margin: 200px auto;
 		font-size:15px;
-		line-height: 37px;
+		line-height: 50px;
 	}
 
+
+	#sbigger{
+		font-size:9pt;
+		padding:10px;
+		height: 100px;
+		top:100px;
+
+	}
 
 	#char1, #char2, #char3, #char4, #char5, #char6, #char7, #char8, #char9, #char10, #char11{
 
@@ -319,10 +327,14 @@ and (device-width : 360px) {
 	}
 	
 	#titleCloud{
-		margin-top:0px;
+		margin-top:75px;
 		padding: 40px 5px 10px 5px;
 	}
 
+	#flyCloudImg{
+		margin: 170px auto 0 auto;
+	}
+	
 	#titleCloudMsg{
 		font-size: 16px;
 		line-height: 18px;
@@ -348,8 +360,13 @@ and (device-width : 380px) {
 	}
 	
 	#titleCloud{
-		margin-top:0px;
+		margin-top:90px;
 		padding: 43px 5px 10px 5px;
+	}
+
+
+	#flyCloudImg{
+		margin: 180px auto 0 auto;
 	}
 
 	#titleCloudMsg{
