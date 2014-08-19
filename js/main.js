@@ -262,10 +262,8 @@ if(i18n.lng()==='ch'){
 	$("#lang").html("Chinese");
 	$("#chLang").hide();
 }else{
-
 	$("#DemoFrame a:has(#EnglishImg)").css('opacity', '0.8');
-	$("#lang").html("Enghlish");
-
+	$("#lang").html("English");
 	$("#enLang").hide();
 }
 
