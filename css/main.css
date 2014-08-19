@@ -44,7 +44,7 @@ body{
 	min-height:100%;
 	/*background:#fff;*/
 	font-family: 'LOVELO_BLACK', Arial, Helvetica, sans-serif;
-	text-rendering: optimizeLegibility !important;
+	
     -webkit-font-smoothing: antialiased !important;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
@@ -235,7 +235,6 @@ div{
 #mallProblemMsg{
 	width: 100%;
 	color:#e35242;
-	text-decoration: uppercase;
 	text-align: center;
 	line-height: 32px;
 	font-size: 25pt;
@@ -260,7 +259,6 @@ div{
 
 #titleCloudMsg{
 	color:#e35242;
-	text-decoration: uppercase;
 	text-align: center;
 	line-height: 20pt;
 	font-size: 17pt;
@@ -846,9 +844,7 @@ div{
 
 /*******************/
 .dropdown-menu{
-	background-color: inherit; */
-    -webkit-background-clip: inherit; 
-	background-clip: inherit;
+	background-color: inherit;  
  	border: 0;
  	border-radius: 0; 
  	-webkit-box-shadow: none; 

@@ -43,5 +43,27 @@ and (min-device-height : 1000px)  {
 		margin-bottom: 350px;
 	}
 }
-/*//f06566*/
 
+
+@media only screen 
+and (device-width : 320px)  {
+	
+	#ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
+		bottom:5%;
+	}
+	#SmartMozo{
+		margin-bottom: 5%;
+	}
+}
+
+
+@media only screen 
+and (device-width : 360px)  {
+	
+	#ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
+		bottom:10%;
+	}
+	#SmartMozo{
+		margin-bottom: 10%;
+	}
+}
