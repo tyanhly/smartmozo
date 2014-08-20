@@ -94,5 +94,8 @@
 		: "LET'S CHAT",
 		
 	"SHOPPING_IS_MORE_FUN_WHEN_YOU_HAVE_FRIENDS_TO_TAG_ALONG"
-		: "<br /> Shopping <br /> is more fun when you have friends to tag along"
+		: "<br /> Shopping <br /> is more fun when you have friends to tag along",
+
+	"COPYRIGHT"
+		: "copyright &copy; 2012-2013 biglabs&#8482; all rights reserved"
 }

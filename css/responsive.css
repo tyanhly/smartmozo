@@ -46,7 +46,8 @@ and (min-device-height : 1000px)  {
 
 
 @media only screen 
-and (device-width : 320px)  {
+and (min-device-width : 320px)  
+and (max-device-width : 359px){
 	
 	#ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
 		bottom:5%;
@@ -58,12 +59,13 @@ and (device-width : 320px)  {
 
 
 @media only screen 
-and (device-width : 360px)  {
+and (min-device-width : 360px)  
+and (max-device-width : 399px){
 	
 	#ChatSmartMozo, #AvailableSmartMozo, #MemberSmartMozo, #CouponSmartMozo,#HotPotSmartMozo, #DirectionSmartMozo, #PromotionSmartMozo {
-		bottom:10%;
+		bottom:15%;
 	}
 	#SmartMozo{
-		margin-bottom: 10%;
+		margin-bottom: 20%;
 	}
 }

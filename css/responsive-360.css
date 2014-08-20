@@ -29,7 +29,7 @@ and (max-device-width : 480px)  {
 	}
 
 	#titleCloudMsg{
-		font-size: 12px;
+		font-size: 13px;
 		line-height: 15px;
 	}
 
@@ -125,8 +125,8 @@ and (max-device-width : 480px)  {
 		width:  300px;
 		margin: 60px auto;
 		padding: 47px 100px;
-		line-height: 13px;
-		font-size: 11px;
+		line-height: 14px;
+		font-size: 12px;
 	}
 
 
@@ -150,16 +150,16 @@ and (max-device-width : 480px)  {
 	#MozoMsg .mozo-msg{
 		height: 170px;
 		width: 170px;	
-		line-height: 19px;
-		font-size: 17px;
+		line-height: 20px;
+		font-size: 18px;
 		bottom: 10px;
 		padding:40px 20px 0px 20px;
 	}
 
 
 	.mozo-header{
-		line-height: 16px;
-		font-size: 14px;
+		line-height: 17px;
+		font-size: 15px;
 		padding:10px 55px 10px 10px;
 	}
 
@@ -202,8 +202,8 @@ and (max-device-width : 480px)  {
 		height: 120px;
 		width: 120px;
 		padding: 1px 25px;
-		font-size:10px;
-		line-height: 11px;
+		font-size:11px;
+		line-height: 12px;
 	}
 
 
@@ -224,14 +224,14 @@ and (max-device-width : 480px)  {
 	#CouponMozoMsg .mozo-msg, #HotPotMozoMsg .mozo-msg, #PromotionMozoMsg .mozo-msg{
 		height: 250px;
 		width: 135px;
-		font-size:9px;
+		font-size:10px;
 		line-height: 12px;
 		padding: 30px 18px 40px 18px;
 	}
 	#MemberMozoMsg .mozo-msg{
 		height: 230px;
 		width: 140px;
-		line-height: 10px;
+		line-height: 11px;
 		padding: 30px 17px 40px 17px;
 	}
 
@@ -282,7 +282,7 @@ and (max-device-width : 480px)  {
 	#ChatMozoMsg .mozo-msg{
 		height: 180px;
 		width: 140px;
-		font-size:10px;
+		font-size:11px;
 		line-height: 13px;
 		padding: 15px 22px;
 	}
@@ -297,9 +297,12 @@ and (max-device-width : 480px)  {
 		
 		height:30px; 
 		line-height: 30px;
-		font-size: 13px;
+		font-size: 14px;
 	}
 
+	#copyright{
+		font-size: 10pt;
+	}
 }
 
 
@@ -318,7 +321,7 @@ and (min-device-height : 500px) {
 
 
 @media only screen 
-and (device-width : 360px) {
+and (min-device-width : 360px) {
 
 	#smartMozoImg, #flyCloudImg, #titleCloud, #imgMall{
 		background-size: 80% ;
@@ -351,8 +354,7 @@ and (device-width : 360px) {
 
 
 @media only screen 
-and (device-width : 380px) {
-
+and (min-device-width : 380px){
 	#smartMozoImg, #flyCloudImg, #titleCloud, #imgMall{
 		background-size: 90% ;
 		background-position: center top;
