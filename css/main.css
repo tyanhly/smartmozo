@@ -769,10 +769,10 @@ div{
 #biglapsLogo{	
 	position: static;
 	background: url(../img/LOGO_Biglabs.png) no-repeat;
-	background-size: contain;
+	background-size: 60%;
 	background-position: left top;
-	/*height: 140px;*/
-	width: 363px;
+	height: 75px;
+	width: 300px;
 	max-width: 100%;
 	margin: 60px auto 0px auto;
 	overflow: hidden;
@@ -780,10 +780,11 @@ div{
 
 #copyright{
 	text-transform: none;
-	margin-top: 112px;
+	margin-top: 60px;
 	font-family: 'Helvetica', Arial, Helvetica, sans-serif;
 	font-weight: 900;
-
+	font-size:8pt;
+	color:#777;
 	/*padding:10px;*/
 }
 
