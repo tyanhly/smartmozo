@@ -94,5 +94,8 @@
 		: "找呀找呀找朋友！",
 		
 	"SHOPPING_IS_MORE_FUN_WHEN_YOU_HAVE_FRIENDS_TO_TAG_ALONG"
-		: "<br /> 随时随地和同在商场内的小伙伴进行交流能让您的购物之旅变得更有趣"
+		: "<br /> 随时随地和同在商场内的小伙伴进行交流能让您的购物之旅变得更有趣",
+
+	"COPYRIGHT"
+		: "copyright &copy; 2012-2013 biglabs&#8482; all rights reserved"
 }
