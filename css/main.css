@@ -76,12 +76,6 @@ div{
 	position: absolute;
 	background:#81D2EC;
 	z-index: 999999999999;
-	padding:100px;
-	
-	height: 100%;
-	width: 100%;
-	text-align: center;
-
 }
 #screen1{
 
@@ -89,6 +83,10 @@ div{
 }
 #loading{
 	width: 32px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 45%;
 }
 #screen2{
 	background: #fff;
